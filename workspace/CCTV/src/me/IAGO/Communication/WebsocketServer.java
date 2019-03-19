@@ -22,9 +22,9 @@ public class WebsocketServer {
 	private Session _session;
 	
 	@OnOpen
-	public void onOpen(Session session, byte [] message) {
+	public void onOpen(Session session, Byte message) {
 		_session = session;
-		JSONObject json = new JSONObject(new String(message));
+		JSONObject json = new JSONObject(message.toString());
 		int idcard = json.getInt("id");
 		System.out.println(idcard);
 	}

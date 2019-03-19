@@ -7,13 +7,19 @@ import me.IAGO.Item.FileSystem_Intfc;
 
 public class Security implements Security_Intfc {
     private FileSystem_Intfc _filesystem;
-    private Date _lastaction;
+    private Date _lastaction = new Date();
     private int _timeout;
-    private String _username, _uuid;
+    private String _username = "", _uuid;
+    private boolean passing = false;
+    
+    public Security(FileSystem_Intfc filesystem){
+        _filesystem = filesystem;
+        passing = false;
+    }
     
     @Override
     public boolean GetVerificationStatus() {
-        return (new Date().getTime() - _lastaction.getTime()) / 1000 >= _timeout;  
+        return passing = (new Date().getTime() - _lastaction.getTime()) / 1000 >= _timeout && passing;
     }
 
     @Override
@@ -36,6 +42,7 @@ public class Security implements Security_Intfc {
                 stringconnect.append(_uuid);
                 stringconnect.append(password);
                 if(verificationinfo == SHA1(stringconnect.toString())) {
+                    passing = true;
                     return true;
                 }
             }

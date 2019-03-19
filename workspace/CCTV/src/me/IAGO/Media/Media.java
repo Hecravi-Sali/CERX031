@@ -63,6 +63,10 @@ public class Media implements Media_Intfc {
 	    });
 	}
 	
+	public String OwnerName() {
+	    return _username;
+	}
+	
     @Override
     public boolean Config(JSONObject conf)
             throws JSONException {
