@@ -1,19 +1,21 @@
 package me.IAGO.Media;
 
-import java.util.Observer;
+import java.text.ParseException;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public interface Media_Intfc {
-	public interface PullMediaDataCallback {
+	public interface MediaDataWatcher {
 		boolean Push(Byte data);
 	}
-	public boolean Config(JSONObject conf);
+	public boolean Config(JSONObject conf) throws JSONException;
 	
-	public JSONObject GetMediaRecordDate();
-	public boolean DelectMediaDate(JSONObject date);
-	public boolean PullMediaData(JSONObject date, PullMediaDataCallback callbackfunc);
+	public JSONObject GetMediaRecordDate() throws JSONException;
+	public boolean DelectMediaDate(JSONObject date) throws ParseException, JSONException;
+	public boolean PullMediaData(JSONObject date, MediaDataWatcher watcher) throws ParseException, JSONException;
 	
 	public boolean PushMediaData(Byte data);
-	public boolean StartMediaForward(Observer forwardobject);
-	public boolean StopMediaForward(Observer forwardobject);
+	public boolean StartMediaForward(MediaDataWatcher watcher);
+	public boolean StopMediaForward(MediaDataWatcher watcher);
 }

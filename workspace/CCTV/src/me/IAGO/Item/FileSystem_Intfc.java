@@ -13,7 +13,7 @@ public interface FileSystem_Intfc {
      * */
     public boolean AddUserInfor(String username, String password);
     public boolean RemoveUserInfo(String username);
-    public boolean ChangeUserPassword(String newpassword);
+    public boolean ChangeUserPassword(String username, String newpassword);
     public String GetUserPassword(String username);
     
     /*
