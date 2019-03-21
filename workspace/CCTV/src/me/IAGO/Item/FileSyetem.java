@@ -1,10 +1,10 @@
 package me.IAGO.Item;
 
-import java.nio.Buffer;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.nio.channels.FileChannel;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,8 +13,6 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
-import antlr.ByteBuffer;
 
 public class FileSyetem implements FileSystem_Intfc {
     private interface DatabaseParameter {
@@ -79,23 +77,7 @@ public class FileSyetem implements FileSystem_Intfc {
 
     @Override
     public List<StoreDate_Intfc> GetUserFileIndex(String username) {
-        StringBuffer dir = new StringBuffer();
-        File userdir = new File(Label.CONST_FILEMAINDIR.toString(), username);
-        File userindex = new File(userdir, Label.CONST_FILEINDEX.toString());
-        if(!userdir.exists()) {
-            userdir.mkdirs();
-            try {
-                userindex.createNewFile();
-            } catch (IOException e) {
-                // TODO 文件创建失败
-            }
-        }
-        if(userindex.exists()) {
-            https://www.cnblogs.com/qi-dian/p/6132694.html
-        }
-        else {
-            //  TODO error
-        }
+        
         return null;
     }
 
@@ -117,7 +99,7 @@ public class FileSyetem implements FileSystem_Intfc {
         return null;
     }
 
-    private synchronized Connection GetDatabaseConnection() {
+    private Connection GetDatabaseConnection() {
         Connection conn = null;
         try {
             Class.forName(Label.CONST_DATABASEDRIVER.toString());
@@ -127,9 +109,9 @@ public class FileSyetem implements FileSystem_Intfc {
                     Label.CONST_DATABASEUSERNAME.toString(), 
                     Label.CONST_DATABASEPASSWORD.toString());
         } catch (ClassNotFoundException e) {
-            // TODO 打印错误日志
+            // TODO 日志
         } catch (SQLException e) {
-            // TODO 打印错误日志
+            // TODO 日志
         }
         return conn;
     }
@@ -149,4 +131,63 @@ public class FileSyetem implements FileSystem_Intfc {
         return re;
     }
     
+    private boolean CreatFile(String filePath) 
+            throws IOException {
+        boolean re = false;
+        File file = new File(filePath);
+        if(!file.exists()){
+            re = file.createNewFile();
+        }
+        return re;
+    }
+    private boolean CreateDirectory(String directory)
+            throws IOException {
+        boolean re = false;
+        File file = new File(directory);
+        if(!file.exists()){
+            re = file.mkdirs();
+        }
+        return re;
+    }
+    private void DeleteFileORDirectory(String filePathORdirectory) {
+        File file = new File(filePathORdirectory);
+        if(!file.exists()){
+            return;
+        }
+        if(file.isFile()){
+            file.delete();
+        }else if(file.isDirectory()){
+            File[] files = file.listFiles();
+            for (File myfile : files) {
+                DeleteFileORDirectory(filePathORdirectory + "/" + myfile.getName());
+            }
+            
+            file.delete();
+        }
+    }
+    private String ReadFileByBytes(String filePath)
+            throws FileNotFoundException, IOException {
+        StringBuffer re = null;
+        File file = new File(filePath);
+        if(file.exists() && file.isFile()){
+            re = new StringBuffer();
+            byte[] temp = new byte[1024];
+            FileInputStream fileInputStream = new FileInputStream(file);
+            while(fileInputStream.read(temp) != -1){
+                re.append(new String(temp));
+                temp = new byte[1024];
+            }
+            
+            fileInputStream.close();
+        }
+        return re.toString();
+    }
+
+    private void WriteFileByFileWriter(String filePath, String data) 
+            throws IOException {
+        //  TODO 并发阻塞 读并发，写等待阻塞
+        FileWriter fw = new FileWriter(filePath);
+        fw.write(data);
+        fw.close();
+    }
 }
