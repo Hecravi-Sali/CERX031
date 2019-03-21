@@ -13,9 +13,9 @@ public interface Media_Intfc {
 	
 	public JSONObject GetMediaRecordDate() throws JSONException;
 	public boolean DelectMediaDate(JSONObject date) throws ParseException, JSONException;
-	public boolean PullMediaData(JSONObject date, MediaDataWatcher watcher) throws ParseException, JSONException;
+	public Byte PullMediaData(JSONObject date) throws ParseException, JSONException;
 	
-	public boolean PushMediaData(Byte data);
-	public boolean StartMediaForward(MediaDataWatcher watcher);
-	public boolean StopMediaForward(MediaDataWatcher watcher);
+	public void PushMediaData(Byte data);
+	public boolean StartMediaForward(String portid, MediaDataWatcher watcher);
+	public boolean StopMediaForward(String portid);
 }

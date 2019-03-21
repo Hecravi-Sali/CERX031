@@ -7,17 +7,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class StoreDate implements StoreDate_Intfc {
-    final public String STORE_STARTDATE = "storestartdate";
-    final public String STORE_ENDDATE = "storeenddate";
-    final public String STORE_TIMEFORMAT = "yyyy-MM-dd HH:mm:ss";
-    
 	private Date _startdate, _enddate;
-	private SimpleDateFormat formatter = new SimpleDateFormat(STORE_TIMEFORMAT);
+	private SimpleDateFormat formatter = new SimpleDateFormat(Label.CONST_STORETIMEFORMAT.toString());
 
 	public StoreDate(JSONObject json) 
 	        throws ParseException, JSONException {
-        _startdate = formatter.parse(json.getString(STORE_STARTDATE));
-        _enddate = formatter.parse(json.getString(STORE_ENDDATE));
+        _startdate = formatter.parse(json.getString(Label.FIELD_STOREDATESTART.toString()));
+        _enddate = formatter.parse(json.getString(Label.FIELD_STOREDATEEND.toString()));
 	}
 	
 	public StoreDate(Date start, Date end) {
@@ -28,8 +24,12 @@ public class StoreDate implements StoreDate_Intfc {
 	@Override
 	public JSONObject toJSON() {
 	    JSONObject json = new JSONObject();
-	    json.put(STORE_STARTDATE, formatter.format(_startdate));
-        json.put(STORE_ENDDATE, formatter.format(_enddate));
+	    json.put(
+	            Label.FIELD_STOREDATESTART.toString(),
+	            formatter.format(_startdate));
+        json.put(
+                Label.FIELD_STOREDATEEND.toString(), 
+                formatter.format(_enddate));
 		return json;
 	}
 

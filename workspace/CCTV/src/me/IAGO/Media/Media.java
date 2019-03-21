@@ -1,9 +1,10 @@
 package me.IAGO.Media;
 
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -11,15 +12,12 @@ import java.util.concurrent.TimeUnit;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import me.IAGO.Item.Label;
 import me.IAGO.Item.FileSystem_Intfc;
 import me.IAGO.Item.StoreDate;
-import me.IAGO.Item.StoreDate_Intfc;;
+import me.IAGO.Item.StoreDate_Intfc;
 
 public class Media implements Media_Intfc {
-	final String MEDIA_INDEXNUM = "media_indexnum";
-	final String MEDIA_SAVE = "media_save";
-	final String MEDIA_TIMELIMIT = "media_timelimit";
-
 	private class MediaDataBuffer {
 	    private StringBuffer [] _mediadata = new StringBuffer[2];
 	    private int _bufferselect = 0;
@@ -41,17 +39,17 @@ public class Media implements Media_Intfc {
 	    }
 	}
 	
-    private List<MediaDataWatcher> _list = new ArrayList<MediaDataWatcher>();
+	private Map<String, MediaDataWatcher> _list = new HashMap<String, MediaDataWatcher>();
     private ScheduledExecutorService _timer = Executors.newScheduledThreadPool(2);
 	private MediaDataBuffer _mediadatabuffer;
 	private FileSystem_Intfc _filesystem;
 	private String _username;
 	
-	Media(FileSystem_Intfc filesystem, String username) {
+	public Media(FileSystem_Intfc filesystem, String username) {
 	    _filesystem = filesystem;
 	    _mediadatabuffer = null;
 	    _username = username;
-	    StartMediaForward(new MediaDataWatcher() {
+	    StartMediaForward("MainSavein", new MediaDataWatcher() {
             @Override
             public boolean Push(Byte data) {
                 if(_mediadatabuffer != null) {
@@ -70,28 +68,35 @@ public class Media implements Media_Intfc {
     @Override
     public boolean Config(JSONObject conf)
             throws JSONException {
-        if(conf.getBoolean(MEDIA_SAVE)) {
-            int timelimit = conf.getInt(MEDIA_TIMELIMIT);
-            _timer.scheduleAtFixedRate(new Runnable() {
-                @Override
-                public void run() {
-                    Date enddate = new Date();
-                    _filesystem.SaveUserFile(_mediadatabuffer.Removeout(), new StoreDate(_mediadatabuffer.startdate, enddate));
-                    _mediadatabuffer.startdate = enddate;
-                }
-            }, 0, timelimit, TimeUnit.SECONDS);
+        if(conf.getBoolean(Label.FIELD_MEDIASAVE.toString())) {
+            int timelimit = conf.getInt(Label.FIELD_MEDIATIMELIMIT.toString());
+            _timer.scheduleAtFixedRate(
+                    () -> {
+                        Date enddate = new Date();
+                        _filesystem.SaveUserFile(
+                                _username,
+                                _mediadatabuffer.Removeout(), 
+                                new StoreDate(_mediadatabuffer.startdate, enddate));
+                        _mediadatabuffer.startdate = enddate; },
+                    0, timelimit, TimeUnit.SECONDS);
         }
         else {
             if(_timer.isShutdown() == false) {
                 try {
-                    _timer.awaitTermination(1, TimeUnit.SECONDS);
-                    Byte remainmediadata = _mediadatabuffer.Removeout();
-                    if(remainmediadata.toString().isEmpty() == false) {
-                        _filesystem.SaveUserFile(remainmediadata, new StoreDate(_mediadatabuffer.startdate, new Date()));
+                    if(_timer.awaitTermination(1, TimeUnit.SECONDS)) {
+                        Byte remainmediadata = _mediadatabuffer.Removeout();
+                        if(remainmediadata.toString().isEmpty() == false) {
+                            _filesystem.SaveUserFile(
+                                    _username,
+                                    remainmediadata, 
+                                    new StoreDate(_mediadatabuffer.startdate, new Date()));
+                        } 
+                    }
+                    else {
+                     // TODO 日志
                     }
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    // TODO 日志
                 }
             }
             _mediadatabuffer = null;
@@ -103,63 +108,52 @@ public class Media implements Media_Intfc {
 	public JSONObject GetMediaRecordDate()
 	        throws JSONException {
 		JSONObject json = new JSONObject();
-		if(SetFileSystemPath()) {
-			List<StoreDate_Intfc> index = _filesystem.GetUserFileIndex();
-			json.put(MEDIA_INDEXNUM, index.size());
-			for(int key = 0; key < index.size(); key++) {
-				json.put(String.valueOf(key), index.get(key).toString());
-			}
-		}
+		List<StoreDate_Intfc> index = _filesystem.GetUserFileIndex(_username);
+        json.put(Label.FIELD_MEDIAINDEXNUM.toString(), index.size());
+        for(int key = 0; key < index.size(); key++) {
+            json.put(String.valueOf(key), index.get(key).toString());
+        }
 		return json;
 	}
 
 	@Override
 	public boolean DelectMediaDate(JSONObject date)
 	        throws ParseException, JSONException {
-		if(SetFileSystemPath()) {
-			for(int key = 0; key < date.getInt(MEDIA_INDEXNUM); key++) {
-			    _filesystem.DeleteUserFile(new StoreDate(date.getJSONObject(String.valueOf(key))));
-			}
-		}
-		return false;
+	    for(int key = 0; key < date.getInt(Label.FIELD_MEDIAINDEXNUM.toString()); key++) {
+            _filesystem.DeleteUserFile(
+                    _username,
+                    new StoreDate(date.getJSONObject(String.valueOf(key))));
+        }
+		return true;
 	}
 
 	@Override
-	public boolean PullMediaData(JSONObject date, MediaDataWatcher callbackfunc)
+	public Byte PullMediaData(JSONObject date)
 	        throws ParseException, JSONException {
-	    if(SetFileSystemPath()) {
-	        StringBuffer mergemediadata = new StringBuffer();
-	        for(int key = 0; key < date.getInt(MEDIA_INDEXNUM); key++) {
-	            mergemediadata.append(_filesystem.GetUserFile(new StoreDate(date.getJSONObject(String.valueOf(key)))).toString());
-	        }  
-	        return callbackfunc.Push(new Byte(mergemediadata.toString()));
+	    StringBuffer mergemediadata = new StringBuffer();
+        for(int key = 0; key < date.getInt(Label.FIELD_MEDIAINDEXNUM.toString()); key++) {
+            mergemediadata.append(_filesystem.GetUserFile(
+                    _username,
+                    new StoreDate(date.getJSONObject(String.valueOf(key)))).toString());
+        }  
+        return new Byte(mergemediadata.toString());
+	}
+
+	@Override
+	public void PushMediaData(Byte data) {
+	    for (Map.Entry<String, MediaDataWatcher> entry : _list.entrySet()) {
+	        entry.getValue().Push(data);
 	    }
-		return false;
 	}
 
 	@Override
-	public boolean PushMediaData(Byte data) {
-	    _list.forEach(watcher -> {
-            watcher.Push(data);
-        });
-		return false;
+	public boolean StartMediaForward(String portid, MediaDataWatcher watcher) {
+        _list.put(portid, watcher);
+        return true;
 	}
 
 	@Override
-	public boolean StartMediaForward(MediaDataWatcher watcher) {
-        return _list.add(watcher);
-	}
-
-	@Override
-	public boolean StopMediaForward(MediaDataWatcher watcher) {
-        return _list.remove(watcher);
-	}
-
-	private boolean SetFileSystemPath()
-	        throws JSONException{
-		if(_filesystem.Available()) {
-			return _filesystem.GotoUserPath(_username);
-		}
-		return false;
+	public boolean StopMediaForward(String portid) {    
+        return _list.remove(portid) != null;
 	}
 }

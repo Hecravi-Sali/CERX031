@@ -1,70 +1,64 @@
 package me.IAGO.Security;
 
-import java.util.Date;
 import java.util.UUID;
 
 import me.IAGO.Item.FileSystem_Intfc;
 
-public class Security implements Security_Intfc {
+public class Security implements Security_Intfc {    
     private FileSystem_Intfc _filesystem;
-    private Date _lastaction = new Date();
-    private int _timeout;
     private String _username = "", _uuid;
-    private boolean passing = false;
+    private boolean _passing;
     
     public Security(FileSystem_Intfc filesystem){
         _filesystem = filesystem;
-        passing = false;
+        _passing = false;
     }
     
     @Override
-    public boolean GetVerificationStatus() {
-        return passing = (new Date().getTime() - _lastaction.getTime()) / 1000 >= _timeout && passing;
+    public boolean VerificationStatus() {
+        return _passing;
     }
 
     @Override
     public String OnetimeVerificationInfo(String username, int verificationtimeout) {
-        watchdog();
-        _timeout = verificationtimeout;
         _username = username;
-        _uuid = UUID.randomUUID().toString();
-        return _uuid;
+        return _uuid = UUID.randomUUID().toString();
     }
 
     @Override
     public boolean Verification(String verificationinfo) {
-        if(GetVerificationStatus()) {
-            watchdog();
-            String password = _filesystem.GetUserPassword(_username);
-            if(password != null) {
-                StringBuffer stringconnect = new StringBuffer();
-                stringconnect.append(_username);
-                stringconnect.append(_uuid);
-                stringconnect.append(password);
-                if(verificationinfo == SHA1(stringconnect.toString())) {
-                    passing = true;
-                    return true;
-                }
+        String password = _filesystem.GetUserPassword(_username);
+        if(password != null) {
+            StringBuffer stringconnect = new StringBuffer();
+            stringconnect.append(_username);
+            stringconnect.append(_uuid);
+            stringconnect.append(password);
+            if(verificationinfo == SHA1(stringconnect.toString())) {
+                _passing = true;
             }
         }
-        return false;
+        return _passing;
     }
 
     @Override
     public Byte DecryptData(Byte encrypteddata) {
         Byte re = null;
-        if(GetVerificationStatus()) {
-            watchdog();
+        if(_passing) {
             re = encrypteddata;
         }
         return re;
     }
-
+    
+    @Override
+    public PrivilegeLevel Privilege(String coreownername) {
+        // TODO
+        if(_passing) {
+            return PrivilegeLevel.None;
+        }
+        return PrivilegeLevel.Owner;
+    }
+        
     private String SHA1(String data){
         return data;
-    }
-    
-    private void watchdog() {
-        _lastaction = new Date();
     }
 }
