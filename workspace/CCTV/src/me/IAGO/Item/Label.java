@@ -27,14 +27,13 @@ public enum Label {
     
     FIELD_MEDIASAVE("mediasave"),
     FIELD_MEDIATIMELIMIT("mediatimelimit"),
-    FIELD_TIMEOUT("timeout"),
     
     FIELD_STOREDATESTART("datestart"),
     FIELD_STOREDATEEND("dateend"),
     
     CONST_STORETIMEFORMAT("yyyy-MM-dd HH:mm:ss"),
     CONST_DATABASEDRIVER("oracle.jdbc.OracleDriver"),
-    CONST_DATABASEURL("jdbc:oracle:thin://localhost:3306/sqltestdb"),
+    CONST_DATABASEURL("jdbc:oracle:thin://localhost:1521/sqltestdb"),
     CONST_DATABASEUSERNAME(""),
     CONST_DATABASEPASSWORD(""),
     
@@ -43,10 +42,10 @@ public enum Label {
     CONST_SQLUPGRADE("UPDATE userinfo SET password = ? WHERE username = ?"),
     CONST_SQLQUERY("SELECT * FROM userinfo WHERE username = ?"),
     
-    CONST_SQLUSERNAME(""),
-    CONST_SQLUSERPASSWORD(""),
+    CONST_SQLUSERNAME("scott"),
+    CONST_SQLUSERPASSWORD("tiger"),
     
-    CONST_FILEMAINDIR("E:"),
+    CONST_FILEMAINDIR("E:/Media"),
     CONST_FILEINDEX("index.json"),
     FIELD_FILEINDEXNUM("fileindexnum")
     ;

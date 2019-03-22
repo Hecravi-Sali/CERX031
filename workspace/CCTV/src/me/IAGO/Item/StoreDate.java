@@ -42,4 +42,9 @@ public class StoreDate implements StoreDate_Intfc {
 	public Date GetEndDate() {
 		return _enddate;
 	}
+	
+	@Override
+	public String toString() {
+	    return toJSON().toString();
+	}
 }

@@ -10,16 +10,18 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class FileSyetem implements FileSystem_Intfc {
-    private interface DatabaseParameter {
-        public PreparedStatement Filling(PreparedStatement pstm) throws SQLException;
-    }
-    
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class FileSystem implements FileSystem_Intfc {   
     private static Lock _databaselock = new ReentrantLock();
+    private static Lock _filelock = new ReentrantLock();
     
     @Override
     public boolean AddUserInfo(String username, String password) {
@@ -77,26 +79,78 @@ public class FileSyetem implements FileSystem_Intfc {
 
     @Override
     public List<StoreDate_Intfc> GetUserFileIndex(String username) {
-        
-        return null;
+        List<StoreDate_Intfc> re = new ArrayList<>();
+        _filelock.lock();
+        if(CheckUserDir(Label.CONST_FILEMAINDIR + "/" + username)) {
+            CatalogTraversal(
+                    Label.CONST_FILEMAINDIR + "/" + username,
+                    (File file) -> {
+                        try {
+                            re.add(new StoreDate(new JSONObject(file.getName())));
+                        } catch (JSONException e) {
+                            // TODO 
+                        } catch (ParseException e) {
+                            // TODO
+                        }
+                    });
+        }
+        _filelock.unlock();
+        return re;
     }
 
     @Override
     public boolean SaveUserFile(String username, Byte data, StoreDate_Intfc date) {
-        // TODO Auto-generated method stub
-        return false;
+        boolean re = false;
+        _filelock.lock();
+        FileWriter fw;
+        if(CheckUserDir(Label.CONST_FILEMAINDIR + "/" + username)) {
+            try {
+                date.toString();
+                fw = new FileWriter(
+                        Label.CONST_FILEMAINDIR + 
+                        "/" + username +
+                        "/" + date.toString());
+                fw.write(data);
+                fw.close();
+                re = true;
+            } catch (IOException e) {
+                // TODO 
+            }
+        }
+        _filelock.unlock();
+        return re;
     }
 
     @Override
     public boolean DeleteUserFile(String username, StoreDate_Intfc date) {
-        // TODO Auto-generated method stub
-        return false;
+        _filelock.lock();
+        CatalogTraversal(
+                (Label.CONST_FILEMAINDIR + "/" + username),
+                (File file) -> {
+                    file.delete();
+                });
+        _filelock.unlock();
+        return true;
     }
 
     @Override
     public Byte GetUserFile(String username, StoreDate_Intfc date) {
-        // TODO Auto-generated method stub
-        return null;
+        String re = new String();
+        _filelock.lock();
+        try {
+            re = ReadFileByBytes(
+                    Label.CONST_FILEMAINDIR + 
+                    "/" + username + 
+                    "/" + date.toString());
+        } catch (FileNotFoundException e) {
+            // TODO
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO
+            e.printStackTrace();
+        }
+        _filelock.unlock();
+        return new Byte(re);
     }
 
     private Connection GetDatabaseConnection() {
@@ -116,6 +170,9 @@ public class FileSyetem implements FileSystem_Intfc {
         return conn;
     }
     
+    private interface DatabaseParameter {
+        public PreparedStatement Filling(PreparedStatement pstm) throws SQLException;
+    }
     private ResultSet DatabaseOperator(String sql, DatabaseParameter parameter) {
         ResultSet re = null;
         PreparedStatement pstm = null;
@@ -131,42 +188,36 @@ public class FileSyetem implements FileSystem_Intfc {
         return re;
     }
     
-    private boolean CreatFile(String filePath) 
-            throws IOException {
-        boolean re = false;
-        File file = new File(filePath);
-        if(!file.exists()){
-            re = file.createNewFile();
-        }
-        return re;
-    }
-    private boolean CreateDirectory(String directory)
-            throws IOException {
-        boolean re = false;
-        File file = new File(directory);
+    private boolean CheckUserDir(String userdir) {
+        boolean re = true;
+        File file = new File(userdir);
         if(!file.exists()){
             re = file.mkdirs();
         }
         return re;
     }
-    private void DeleteFileORDirectory(String filePathORdirectory) {
-        File file = new File(filePathORdirectory);
-        if(!file.exists()){
-            return;
-        }
-        if(file.isFile()){
-            file.delete();
-        }else if(file.isDirectory()){
-            File[] files = file.listFiles();
-            for (File myfile : files) {
-                DeleteFileORDirectory(filePathORdirectory + "/" + myfile.getName());
+    
+    private interface TraversalOperation {
+        void Do(File file);
+    }
+    private void CatalogTraversal(String fileordir, TraversalOperation c) {
+        File file = new File(fileordir);
+        if(file.exists()){
+            if(file.isFile()){
+                c.Do(file);
+            }else if(file.isDirectory()){
+                File[] files = file.listFiles();
+                for (File myfile : files) {
+                    CatalogTraversal(fileordir + "/" + myfile.getName(), c);
+                }           
+                c.Do(file);
             }
-            
-            file.delete();
         }
     }
+
     private String ReadFileByBytes(String filePath)
             throws FileNotFoundException, IOException {
+        _filelock.lock();
         StringBuffer re = null;
         File file = new File(filePath);
         if(file.exists() && file.isFile()){
@@ -177,17 +228,9 @@ public class FileSyetem implements FileSystem_Intfc {
                 re.append(new String(temp));
                 temp = new byte[1024];
             }
-            
             fileInputStream.close();
         }
+        _filelock.unlock();
         return re.toString();
-    }
-
-    private void WriteFileByFileWriter(String filePath, String data) 
-            throws IOException {
-        //  TODO 并发阻塞 读并发，写等待阻塞
-        FileWriter fw = new FileWriter(filePath);
-        fw.write(data);
-        fw.close();
     }
 }

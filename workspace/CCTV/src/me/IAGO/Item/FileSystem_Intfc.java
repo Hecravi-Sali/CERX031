@@ -1,7 +1,9 @@
 package me.IAGO.Item;
 
 import java.util.List;
-
+/*
+ * 
+ */
 public interface FileSystem_Intfc {
     
     public boolean AddUserInfo(String username, String password);
