@@ -47,4 +47,8 @@ public class StoreDate implements StoreDate_Intfc {
 	public String toString() {
 	    return toJSON().toString();
 	}
+	
+	public boolean equals(StoreDate otherone) {	    
+	    return otherone._startdate.equals( this._startdate) && otherone._enddate.equals(this._enddate);
+	}
 }

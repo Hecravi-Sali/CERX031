@@ -13,6 +13,7 @@ public enum Label {
     SERVER_STARTWATCH("coreserver_startwatch"),
     SERVER_STOPWATCH("coreserver_stopwatch"),
     SERVER_PULLMEDIA("coreserver_pullmediadata"),
+    SERVER_CONFIGMEDIA("coreserver_configmedia"),
     
     FIELD_PUBLICKEY("publiykey"),
     FIELD_MESSAGE("logonmessage"),
@@ -24,6 +25,7 @@ public enum Label {
     FIELD_MEDIAINDEXNUM("mediaindexnum"),
     FIELD_MEDIADATA("mediadata"),
     FIELD_MEDIADOWNLOAD("downloadmedia"),
+    FIELD_CONFIGMEDIA("configmedia"),
     
     FIELD_MEDIASAVE("mediasave"),
     FIELD_MEDIATIMELIMIT("mediatimelimit"),
@@ -45,10 +47,13 @@ public enum Label {
     CONST_SQLUSERNAME("scott"),
     CONST_SQLUSERPASSWORD("tiger"),
     
-    CONST_FILEMAINDIR("E:/Media"),
-    CONST_FILEINDEX("index.json"),
-    FIELD_FILEINDEXNUM("fileindexnum")
-    ;
+    CONST_FILEMAINDIR("F:/Media"),
+    CONST_FILEINDEX("mediaindex"),
+    CONST_FILEBUFFERSIZE("1024"),
+    FIELD_FILEINDEXNUM("fileindexnum"),
+    
+    CONST_LOGDIR("F:/Media"),
+    CONST_LOGNAME("logger.txt");
 
     private String _str;
     
@@ -57,5 +62,15 @@ public enum Label {
     }
     public String toString() {
         return _str;
+    }
+    public synchronized static Label fromString(String text) {
+        if (text != null) {
+            for (Label b : Label.values()) {
+                if (text.equals(b.toString())) {
+                    return b;
+                }
+            }
+        }
+        return null;
     }
 }

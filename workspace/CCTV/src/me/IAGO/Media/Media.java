@@ -1,16 +1,20 @@
 package me.IAGO.Media;
 
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.alibaba.druid.util.Base64;
 
 import me.IAGO.Item.Label;
 import me.IAGO.Item.FileSystem_Intfc;
@@ -18,47 +22,44 @@ import me.IAGO.Item.StoreDate;
 import me.IAGO.Item.StoreDate_Intfc;
 
 public class Media implements Media_Intfc {
-	private class MediaDataBuffer {
-	    private StringBuffer [] _mediadata = new StringBuffer[2];
-	    private int _bufferselect = 0;
-	    public Date startdate = new Date();
-	    
-	    public void Savein(Byte data) {
-	        _mediadata[ChangeBuffer(false)].append(data.toString());
-	    }
-	    
-	    public Byte Removeout() {
-	        return new Byte(_mediadata[ChangeBuffer(true)].toString());
-	    }
-	    
-	    private synchronized int ChangeBuffer(boolean bufferswitch) {
-	        if(bufferswitch) {
-	            _bufferselect = 1 - _bufferselect;
+	private class ConnectBase64 {
+	    private StringBuffer _mediadata = new StringBuffer();
+	    public Date startdate = new Date();    
+
+	    public void Savein(String data) {
+	        synchronized(this) {
+	            _mediadata.append(new String(Base64.base64ToByteArray(data)));
 	        }
-	        return _bufferselect;
+	    }
+	    public String Removeout() {
+	        String re;
+	        synchronized(this) {
+	            re = Base64.byteArrayToBase64(_mediadata.toString().getBytes());
+	            _mediadata = new StringBuffer();
+	        }
+	        return re;
 	    }
 	}
 	
 	private Map<String, MediaDataWatcher> _list = new HashMap<String, MediaDataWatcher>();
-    private ScheduledExecutorService _timer = Executors.newScheduledThreadPool(2);
-	private MediaDataBuffer _mediadatabuffer;
+    private ScheduledExecutorService _timer = Executors.newScheduledThreadPool(1);
+    private ScheduledFuture<?> runingthread = null;
+	private ConnectBase64 _connectbase64 = null;
 	private FileSystem_Intfc _filesystem;
 	private String _username;
 	
 	public Media(FileSystem_Intfc filesystem, String username) {
 	    _filesystem = filesystem;
-	    _mediadatabuffer = null;
 	    _username = username;
-	    StartMediaForward("MainSavein", new MediaDataWatcher() {
-            @Override
-            public boolean Push(Byte data) {
-                if(_mediadatabuffer != null) {
-                    _mediadatabuffer.Savein(data);
-                    return true;
-                }
-                return false;
-            }
-	    });
+	    StartMediaForward(
+	            "MainSavein", 
+	            (String data) -> {
+	                if(_connectbase64 != null) {
+	                    _connectbase64.Savein(data);
+	                    return true;
+	                }
+	                return false;
+	            });
 	}
 	
 	public String OwnerName() {
@@ -68,40 +69,46 @@ public class Media implements Media_Intfc {
     @Override
     public boolean Config(JSONObject conf)
             throws JSONException {
+        boolean re = true;
         if(conf.getBoolean(Label.FIELD_MEDIASAVE.toString())) {
-            int timelimit = conf.getInt(Label.FIELD_MEDIATIMELIMIT.toString());
-            _timer.scheduleAtFixedRate(
-                    () -> {
-                        Date enddate = new Date();
-                        _filesystem.SaveUserFile(
-                                _username,
-                                _mediadatabuffer.Removeout(), 
-                                new StoreDate(_mediadatabuffer.startdate, enddate));
-                        _mediadatabuffer.startdate = enddate; },
-                    0, timelimit, TimeUnit.SECONDS);
+            if(runingthread == null) {
+                int timelimit = conf.getInt(Label.FIELD_MEDIATIMELIMIT.toString());
+                timelimit = timelimit > 1 ? timelimit : 2;
+                _connectbase64 = new ConnectBase64();
+                runingthread = _timer.scheduleAtFixedRate(
+                        () -> {
+                            Date enddate = new Date();
+                            String data = _connectbase64.Removeout();
+                            if(data.length() > 0) {
+                                _filesystem.SaveUserFile(
+                                        _username,
+                                        data, 
+                                        new StoreDate(_connectbase64.startdate, enddate));
+                            }
+                            _connectbase64.startdate = enddate; 
+                        },
+                        timelimit, timelimit, TimeUnit.SECONDS);
+            }
+            else {
+                //  TODO log
+                re = false;
+            }
         }
         else {
-            if(_timer.isShutdown() == false) {
-                try {
-                    if(_timer.awaitTermination(1, TimeUnit.SECONDS)) {
-                        Byte remainmediadata = _mediadatabuffer.Removeout();
-                        if(remainmediadata.toString().isEmpty() == false) {
-                            _filesystem.SaveUserFile(
-                                    _username,
-                                    remainmediadata, 
-                                    new StoreDate(_mediadatabuffer.startdate, new Date()));
-                        } 
-                    }
-                    else {
-                     // TODO 日志
-                    }
-                } catch (InterruptedException e) {
-                    // TODO 日志
-                }
+            while(!runingthread.isDone()) {
+                runingthread.cancel(false);
             }
-            _mediadatabuffer = null;
+            runingthread = null;
+            String remainmediadata = _connectbase64.Removeout();
+            if(remainmediadata.toString().isEmpty() == false) {
+                _filesystem.SaveUserFile(
+                        _username,
+                        remainmediadata, 
+                        new StoreDate(_connectbase64.startdate, new Date()));
+            }
+            _connectbase64 = null;
         }
-        return true;
+        return re;
     }
     
 	@Override
@@ -122,25 +129,35 @@ public class Media implements Media_Intfc {
 	    for(int key = 0; key < date.getInt(Label.FIELD_MEDIAINDEXNUM.toString()); key++) {
             _filesystem.DeleteUserFile(
                     _username,
-                    new StoreDate(date.getJSONObject(String.valueOf(key))));
+                    new StoreDate(new JSONObject(date.getString(String.valueOf(key)))));
         }
 		return true;
 	}
 
 	@Override
-	public Byte PullMediaData(JSONObject date)
+	public String PullMediaData(JSONObject date)
 	        throws ParseException, JSONException {
-	    StringBuffer mergemediadata = new StringBuffer();
+	    ConnectBase64 re = new ConnectBase64();
+	    List<StoreDate> datesort = new ArrayList<>();
         for(int key = 0; key < date.getInt(Label.FIELD_MEDIAINDEXNUM.toString()); key++) {
-            mergemediadata.append(_filesystem.GetUserFile(
-                    _username,
-                    new StoreDate(date.getJSONObject(String.valueOf(key)))).toString());
-        }  
-        return new Byte(mergemediadata.toString());
+            datesort.add(new StoreDate(new JSONObject(date.getString(String.valueOf(key)))));
+        }
+        datesort.sort(
+                (StoreDate date1, StoreDate date2) -> {
+                    return date1.GetBeginDate().compareTo(date2.GetBeginDate());
+                });
+        datesort.forEach(
+                (oneoffile) -> {
+                    re.Savein(
+                            _filesystem.GetUserFile(
+                                    _username,
+                                    oneoffile));
+                });
+        return re.Removeout();
 	}
 
 	@Override
-	public void PushMediaData(Byte data) {
+	public void PushMediaData(String data) {
 	    for (Map.Entry<String, MediaDataWatcher> entry : _list.entrySet()) {
 	        entry.getValue().Push(data);
 	    }
@@ -148,8 +165,12 @@ public class Media implements Media_Intfc {
 
 	@Override
 	public boolean StartMediaForward(String portid, MediaDataWatcher watcher) {
-        _list.put(portid, watcher);
-        return true;
+	    boolean re = false;
+	    if(_list.get(portid) == null) {
+	        _list.put(portid, watcher);
+	        re = true;
+	    }
+        return re;
 	}
 
 	@Override

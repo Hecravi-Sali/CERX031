@@ -6,12 +6,16 @@ import me.IAGO.Item.FileSystem_Intfc;
 
 public class Security implements Security_Intfc {    
     private FileSystem_Intfc _filesystem;
-    private String _username = "", _uuid;
+    private String _username = "", _uuid = UUID.randomUUID().toString();
     private boolean _passing;
     
     public Security(FileSystem_Intfc filesystem){
         _filesystem = filesystem;
         _passing = false;
+    }
+    
+    public String GetUsername() {
+        return _username;
     }
     
     @Override
@@ -21,8 +25,12 @@ public class Security implements Security_Intfc {
 
     @Override
     public String OnetimeVerificationInfo(String username, int verificationtimeout) {
-        _username = username;
-        return _uuid = UUID.randomUUID().toString();
+        String re = "";
+        if(!_passing) {
+            _username = username;
+            re = _uuid;
+        }
+        return re;
     }
 
     @Override
@@ -33,7 +41,7 @@ public class Security implements Security_Intfc {
             stringconnect.append(_username);
             stringconnect.append(_uuid);
             stringconnect.append(password);
-            if(verificationinfo == SHA1(stringconnect.toString())) {
+            if(verificationinfo.equals(SHA1(stringconnect.toString()))) {
                 _passing = true;
             }
         }
@@ -41,8 +49,8 @@ public class Security implements Security_Intfc {
     }
 
     @Override
-    public Byte DecryptData(Byte encrypteddata) {
-        Byte re = null;
+    public String DecryptData(String encrypteddata) {
+        String re = null;
         if(_passing) {
             re = encrypteddata;
         }
@@ -52,10 +60,13 @@ public class Security implements Security_Intfc {
     @Override
     public PrivilegeLevel Privilege(String coreownername) {
         // TODO
-        if(_passing) {
+        if(!_passing) {
             return PrivilegeLevel.None;
         }
-        return PrivilegeLevel.Owner;
+        if(coreownername.equals(_username)) {
+            return PrivilegeLevel.Owner;
+        }
+        return PrivilegeLevel.Group;
     }
         
     private String SHA1(String data){

@@ -10,6 +10,6 @@ public interface Security_Intfc {
     public boolean VerificationStatus();
 	public String OnetimeVerificationInfo(String username, int verificationtimeout);
 	public boolean Verification(String verificationinfo);
-	public Byte DecryptData(Byte encrypteddata);
+	public String DecryptData(String encrypteddata);
 	public PrivilegeLevel Privilege(String coreownername);
 }

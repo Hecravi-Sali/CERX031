@@ -204,10 +204,10 @@ function onBtnRecordClicked() {
 	} else {
 		webSocket.send("asxdasdaswasx");
 		log("Send");
-		/*navigator.getUserMedia(constraints, startRecording, errorCallback);
+		navigator.getUserMedia(constraints, startRecording, errorCallback);
 		recBtn.disabled = true;
 		pauseResBtn.disabled = false;
-		stopBtn.disabled = false;*/
+		stopBtn.disabled = false;
 	}
 }
 
