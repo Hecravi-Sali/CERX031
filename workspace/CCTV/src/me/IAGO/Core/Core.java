@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import me.IAGO.Item.FileSystem;
 import me.IAGO.Item.FileSystem_Intfc;
 import me.IAGO.Item.Label;
+import me.IAGO.Log.Log_Intfc;
 import me.IAGO.Media.Media;
 import me.IAGO.Media.Media_Intfc;
 import me.IAGO.Security.Security;
@@ -25,14 +26,15 @@ public class Core implements Core_Intfc {
             mediawatcher = sendfunction;
         }
     }
-    private Logger _logger = Logger.getLogger(FileSystem.class.toString());
+    private Log_Intfc _logger;
     private static FileSystem_Intfc _filesystem = null;
     private Media _media;
     private Map<String, PortInfo> _userlinkport;
     
-    public Core(String ownername, FileSystem_Intfc filesystem){
+    public Core(String ownername, FileSystem_Intfc filesystem, Log_Intfc log){
         _filesystem = filesystem;
         _media = new Media(_filesystem, ownername);
+        _logger = log;
         _userlinkport = new HashMap<>();  
     }
     
@@ -197,22 +199,22 @@ public class Core implements Core_Intfc {
                     }
 
                     default:
-                        _logger.severe("Unable to process service request");
+                        _logger.Error("Unable to process service request");
                         break;
                     }
                 }
                 catch (ParseException w) {
-                    _logger.severe("An unrecoverable error occurred during the JSON conversion process");
+                    _logger.Error("An unrecoverable error occurred during the JSON conversion process");
                 }
                 catch (JSONException e) {
-                    _logger.severe("An error occurred during the acquisition JSON key process");
+                    _logger.Error("An error occurred during the acquisition JSON key process");
                 }
                 catch (IllegalArgumentException e) {
-                    _logger.severe("Illegal parameter");
+                    _logger.Error("Illegal parameter");
                 }
             }
             else {
-                _logger.severe("Unregistered port trying to access");
+                _logger.Error("Unregistered port trying to access");
             }
         }
         return backto;
@@ -228,7 +230,7 @@ public class Core implements Core_Intfc {
     @Override
     public void OnError(String portid, Throwable error) {
         synchronized(this) {
-            _logger.severe("Websocket get error" + error);
+            _logger.Error("Websocket get error" + error);
         }
     }
     

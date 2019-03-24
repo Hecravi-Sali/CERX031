@@ -15,34 +15,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.alibaba.druid.util.Base64;
 
+import me.IAGO.Log.Log_Intfc;
+
 public class FileSystem implements FileSystem_Intfc {   
     private static Lock _databaselock = new ReentrantLock();
     private static Lock _filelock = new ReentrantLock();
-    private static Logger logger = Logger.getLogger(FileSystem.class.toString());
-    private static FileHandler loggerfile;
+    private Log_Intfc _logger;
     
-    public FileSystem() {
-        File file = new File(Label.CONST_LOGDIR.toString(), Label.CONST_LOGNAME.toString());
-        if (!file.getParentFile().exists()) {
-            file.getParentFile().mkdirs();
-        }
-        try {
-            file.createNewFile();
-            System.out.println(file.getAbsolutePath());
-            loggerfile = new FileHandler(file.getAbsolutePath());
-            logger.addHandler(loggerfile); 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        logger.info("日志文件创建成功");
+    public FileSystem(Log_Intfc log) {
+        _logger = log;
     }
     
     @Override
@@ -96,7 +83,7 @@ public class FileSystem implements FileSystem_Intfc {
             try {
                 password = re.getString(1);
             } catch (SQLException e) {
-                logger.severe("数据库访问错误");
+                _logger.Error("Database access error");
             } 
         }
         return password;
@@ -112,9 +99,9 @@ public class FileSystem implements FileSystem_Intfc {
                     Label.CONST_DATABASEUSERNAME.toString(), 
                     Label.CONST_DATABASEPASSWORD.toString());
         } catch (ClassNotFoundException e) {
-            logger.severe("数据库访问错误");
+            _logger.Error("Database access error");
         } catch (SQLException e) {
-            logger.severe("数据库访问错误");
+            _logger.Error("SQL statement execution error");
         }
         return conn;
     }
@@ -134,7 +121,7 @@ public class FileSystem implements FileSystem_Intfc {
                 pstm.close();
             }
         } catch (SQLException e) {
-            logger.severe("SQL语句执行错误");
+            _logger.Error("SQL statement execution error");
         }
         _databaselock.unlock();
         return re;
@@ -153,9 +140,9 @@ public class FileSystem implements FileSystem_Intfc {
                                     new JSONObject(
                                             new String(Base64.base64ToByteArray(file.getName())))));
                         } catch (JSONException e) {
-                            logger.severe("文件名读取失败，存在文件名被破坏");
+                            _logger.Error("An error occurred when system analysis filename, filename perhaps changed");
                         } catch (ParseException e) {
-                            logger.severe("文件名转换失败，存在文件名被破坏");
+                            _logger.Error("An error occurred when system transcoding filename, filename perhaps changed");
                         };
                     },
                     (File dir) -> {
@@ -182,7 +169,7 @@ public class FileSystem implements FileSystem_Intfc {
                 fw.close();
                 re = true;
             } catch (IOException e) {
-                logger.severe("无法写入文件");
+                _logger.Error("Unable to write to file");
             }
         }
         _filelock.unlock();
@@ -216,9 +203,9 @@ public class FileSystem implements FileSystem_Intfc {
                     "/" + username + 
                     "/" + Base64.byteArrayToBase64(date.toString().getBytes()));
         } catch (FileNotFoundException e) {
-            logger.severe("未找到文件，读取期间文件被修改");
+            _logger.Error("Unable to find file; An problem with submitted search directory");
         } catch (IOException e) {
-            logger.severe("IO错误");
+            _logger.Error("IO Error");
         }
         _filelock.unlock();
         return re;
@@ -230,7 +217,7 @@ public class FileSystem implements FileSystem_Intfc {
         if(!file.exists()){
             if(!file.mkdirs()) {
                 re = false;
-                logger.severe("目录创建失败");
+                _logger.Error("File directory creation failed");
             }
         }
         return re;
@@ -280,7 +267,7 @@ public class FileSystem implements FileSystem_Intfc {
             fileInputStream.close();
         }
         else {
-            logger.severe("将要读取的文件不存在");
+            _logger.Error("Unable to find file");
         }
         return re.toString();
     }

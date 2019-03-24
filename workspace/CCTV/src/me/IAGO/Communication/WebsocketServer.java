@@ -1,32 +1,37 @@
 package me.IAGO.Communication;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
+
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
-import org.apache.log4j.Logger;
-import org.json.JSONObject;
+
 import org.springframework.stereotype.Component;
+
+import me.IAGO.Core.Core_Intfc;
+import me.IAGO.Item.FileSystem_Intfc;
+import me.IAGO.Log.Log;
+import me.IAGO.Log.Log_Intfc;
 
 @Component
 @ServerEndpoint(value = "/websocket")
 public class WebsocketServer {
-
-	private Logger _logger = Logger.getLogger(WebsocketServer.class);
-	private static final Map<String, WebsocketServer> 
-		ALLWebsocketConnectionHashMap = new HashMap<String, WebsocketServer>();
+    private static Log_Intfc _logger = new Log();
+    private static FileSystem_Intfc filesystem;
+	private static ConcurrentHashMap<String, WebsocketServer> _collectionmap = new ConcurrentHashMap<>();
+	private static ConcurrentHashMap<String, Core_Intfc> _coremap = new ConcurrentHashMap<>();
 	private Session _session;
+	private String _uuid;
 	
 	@OnOpen
-	public void onOpen(Session session, Byte message) {
+	public void onOpen(Session session) {
+	    _uuid = UUID.randomUUID().toString();
+	    _collectionmap.put(_uuid, this);
 		_session = session;
-		JSONObject json = new JSONObject(message.toString());
-		int idcard = json.getInt("id");
-		System.out.println(idcard);
 	}
 	
 	@OnMessage
@@ -36,7 +41,7 @@ public class WebsocketServer {
 
 	@OnClose
 	public void onClose(Session session) {
-
+	    _collectionmap.remove(_uuid);
 	}
 
 	@OnError

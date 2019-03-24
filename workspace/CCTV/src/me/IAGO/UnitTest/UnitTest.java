@@ -20,14 +20,17 @@ import me.IAGO.Item.FileSystem;
 import me.IAGO.Item.FileSystem_Intfc;
 import me.IAGO.Item.Label;
 import me.IAGO.Item.StoreDate;
+import me.IAGO.Log.Log;
+import me.IAGO.Log.Log_Intfc;
 import me.IAGO.Media.Media;
 import me.IAGO.Media.Media_Intfc.MediaDataWatcher;
 
 public class UnitTest {
 
+    private static Log_Intfc _logger = new Log();
     @Test
     public void test() throws UnsupportedEncodingException, InterruptedException {
-        FileSystem file = new FileSystem();
+        FileSystem file = new FileSystem(_logger);
         Date starttime = new Date();
         Thread.sleep(500);
         Date endtime = new Date();
@@ -53,7 +56,7 @@ public class UnitTest {
     @Test
     public void MediaUnitTest() throws InterruptedException, JSONException, ParseException {
         String username = "halaoshi";
-        FileSystem file = new FileSystem();
+        FileSystem file = new FileSystem(_logger);
         Media media = new Media(file, username);
         media.StartMediaForward(
                 "1", 
@@ -103,7 +106,11 @@ public class UnitTest {
         }
     }
     
-    class FileSystem_NoDatabase extends  FileSystem {
+    class FileSystem_NoDatabase extends  FileSystem {        
+        public FileSystem_NoDatabase(Log_Intfc log) {
+            super(log);
+        }
+
         Map<String, String>_userinfo = new HashMap<>();
         
         @Override
@@ -222,8 +229,8 @@ public class UnitTest {
         final String username1 = "halaoshi";
         final String password1 = "123";
         final String uuid1 = UUID.randomUUID().toString();
-        FileSystem_Intfc filesystem = new FileSystem_NoDatabase();
-        Core core = new Core(username1, filesystem);
+        FileSystem_Intfc filesystem = new FileSystem_NoDatabase(_logger);
+        Core core = new Core(username1, filesystem, _logger);
         
         core.OnOpen(
                 uuid1,
