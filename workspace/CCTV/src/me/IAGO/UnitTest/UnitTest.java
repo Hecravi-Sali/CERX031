@@ -5,8 +5,6 @@ import static org.junit.Assert.assertTrue;
 import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 import org.json.JSONException;
@@ -18,6 +16,7 @@ import com.alibaba.druid.util.Base64;
 import me.IAGO.Core.Core;
 import me.IAGO.Item.FileSystem;
 import me.IAGO.Item.FileSystem_Intfc;
+import me.IAGO.Item.FileSystem_NoDatabase;
 import me.IAGO.Item.Label;
 import me.IAGO.Item.StoreDate;
 import me.IAGO.Log.Log;
@@ -103,44 +102,6 @@ public class UnitTest {
         assertTrue(checkin.toString().equals(getdata));
         if(true) {
             media.DelectMediaDate(media.GetMediaRecordDate());
-        }
-    }
-    
-    class FileSystem_NoDatabase extends  FileSystem {        
-        public FileSystem_NoDatabase(Log_Intfc log) {
-            super(log);
-        }
-
-        Map<String, String>_userinfo = new HashMap<>();
-        
-        @Override
-        public boolean AddUserInfo(String username, String password) {
-            boolean re = false;
-            if(_userinfo.get(username) == null) {
-                _userinfo.put(username, password);
-                re = true;
-            }
-            return re;
-        }
-        
-        @Override
-        public boolean RemoveUserInfo(String username) {
-            return _userinfo.remove(username) != null;
-        }
-        
-        @Override
-        public boolean ChangeUserPassword(String username, String newpassword) {
-            boolean re = false;
-            if(_userinfo.remove(username) != null) {
-                _userinfo.put(username, newpassword);
-                re = true;
-            }
-            return re;
-        }
-        
-        @Override
-        public String GetUserPassword(String username) {
-            return _userinfo.get(username);
         }
     }
     

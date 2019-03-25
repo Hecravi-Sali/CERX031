@@ -1,6 +1,13 @@
 package me.IAGO.Item;
 
 public enum Label {
+    PORT_CONNECTCORE("port_connectcore"),
+    PORT_CONNECTCORE_OPEN("port_coreopen"),
+    PORT_CONNECTCORE_STABLE("port_corestable"),
+    PORT_CONNECTCORE_CLOSE("port_coreclose"),
+    FIELD_COREOWNERNAME("port_ownername"),
+    FIELD_COREMESSAGE("port_coremessage"),
+    
     SERVER("server"),
     SERVER_LOGON("serverlogon"),
     SERVER_LOGONCONFIRM("coreserver_logonconfirm"),

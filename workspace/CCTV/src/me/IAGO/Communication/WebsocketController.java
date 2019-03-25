@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WebsocketController {
 	@RequestMapping(value = "/home")
 	public String Home(HttpServletRequest req) {
-		return "udp";
-	}
-	
-	@RequestMapping(value = "/temp")
-	public String Temp(HttpServletRequest req) {
-		return "temp";
+		return "Main";
 	}
 }
