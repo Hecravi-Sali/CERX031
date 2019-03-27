@@ -16,11 +16,11 @@ import me.IAGO.Security.Security_Intfc.PrivilegeLevel;
 
 public class Core implements Core_Intfc {
     private class PortInfo {
-        public Security security;
-        public Media_Intfc.MediaDataWatcher mediawatcher;
+        public Security _security;
+        public Media_Intfc.MediaDataWatcher _mediawatcher;
         PortInfo(FileSystem_Intfc filesystem, Media_Intfc.MediaDataWatcher sendfunction) {
-            security = new Security(filesystem);
-            mediawatcher = sendfunction;
+            _security = new Security(filesystem);
+            _mediawatcher = sendfunction;
         }
     }
     private Log_Intfc _logger;
@@ -76,8 +76,8 @@ public class Core implements Core_Intfc {
                         String loginusername = message.getString(Label.FIELD_USERNAME.toString());
                         boolean useralreadlogin = false;
                         for (Map.Entry<String, PortInfo> otherport : _userlinkport.entrySet()) {
-                            if(otherport.getValue().security.VerificationStatus()) {
-                                if(otherport.getValue().security.GetUsername().equals(loginusername)) {
+                            if(otherport.getValue()._security.VerificationStatus()) {
+                                if(otherport.getValue()._security.GetUsername().equals(loginusername)) {
                                     useralreadlogin = true;
                                     break;
                                 }
@@ -86,7 +86,7 @@ public class Core implements Core_Intfc {
                         if(!useralreadlogin) {
                             backto.put(
                                     Label.FIELD_ONETIMECODE.toString(), 
-                                    portinfo.security.OnetimeVerificationInfo(loginusername, 300));
+                                    portinfo._security.OnetimeVerificationInfo(loginusername, 300));
                             backto.put(Label.FIELD_MESSAGE.toString(), true);
                         }
                         else {
@@ -98,17 +98,17 @@ public class Core implements Core_Intfc {
                     case SERVER_VERIFICATION : {
                         backto.put(
                                 Label.FIELD_VERIFICATIONSTATUS.toString(), 
-                                portinfo.security.Verification(message.getString(Label.FIELD_MESSAGE.toString())));     
+                                portinfo._security.Verification(message.getString(Label.FIELD_MESSAGE.toString())));     
                         break;
                     }
                     case SERVER_VERIFICATION_STATUS : {
                         backto.put(
                                 Label.FIELD_VERIFICATIONSTATUS.toString(), 
-                                portinfo.security.VerificationStatus());
+                                portinfo._security.VerificationStatus());
                         break;
                     }
                     case SERVER_GETMEDIAINDEX : {
-                        if(portinfo.security.VerificationStatus()) {
+                        if(portinfo._security.VerificationStatus()) {
                             backto.put(
                                     Label.FIELD_MEDIAINDEX.toString(), 
                                     _media.GetMediaRecordDate());
@@ -120,10 +120,10 @@ public class Core implements Core_Intfc {
                         break;
                     }
                     case SERVER_DELETEMEDIA : {
-                        if(portinfo.security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
+                        if(portinfo._security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
                             backto.put(
                                     Label.FIELD_MESSAGE.toString(), 
-                                    _media.DelectMediaDate(message.getJSONObject(Label.FIELD_MEDIAINDEX.toString())));
+                                    _media.DelectMediaDate(new JSONObject(message.getString(Label.FIELD_MEDIAINDEX.toString()))));
                         }
                         else {
                             backto.put(Label.FIELD_MESSAGE.toString(), false);
@@ -131,7 +131,7 @@ public class Core implements Core_Intfc {
                         break;
                     }
                     case SERVER_PUSHMEDIA: {
-                        if(portinfo.security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
+                        if(portinfo._security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
                             _media.PushMediaData(message.getString(Label.FIELD_MEDIADATA.toString()));
                             backto.put(Label.FIELD_MESSAGE.toString(), true);
                         }
@@ -142,7 +142,7 @@ public class Core implements Core_Intfc {
                     }
                     case SERVER_STARTWATCH : {
                         //  TODO 权限检查 
-                        if(portinfo.security.VerificationStatus()) {
+                        if(portinfo._security.VerificationStatus()) {
                             backto.put(
                                     Label.FIELD_MESSAGE.toString(),
                                     _media.StartMediaForward(
@@ -152,7 +152,7 @@ public class Core implements Core_Intfc {
                                                 pack.put(
                                                         Label.FIELD_MEDIADATA.toString(), 
                                                         data);
-                                                portinfo.mediawatcher.Push(pack.toString());
+                                                portinfo._mediawatcher.Push(pack.toString());
                                                 return true;
                                             }));
                         }
@@ -162,7 +162,7 @@ public class Core implements Core_Intfc {
                         break;
                     }
                     case SERVER_STOPWATCH : {
-                        if(portinfo.security.VerificationStatus()) {
+                        if(portinfo._security.VerificationStatus()) {
                             backto.put(
                                     Label.FIELD_MESSAGE.toString(), 
                                     _media.StopMediaForward(portid));
@@ -173,10 +173,10 @@ public class Core implements Core_Intfc {
                         break;
                     }
                     case SERVER_PULLMEDIA : {
-                        if(portinfo.security.VerificationStatus()) {
+                        if(portinfo._security.VerificationStatus()) {
                             backto.put(
                                     Label.FIELD_MEDIADOWNLOAD.toString(), 
-                                    _media.PullMediaData(message.getJSONObject(Label.FIELD_MEDIAINDEX.toString())));
+                                    _media.PullMediaData(new JSONObject(message.getString(Label.FIELD_MEDIAINDEX.toString()))));
                         }
                         else {
                             backto.put(Label.FIELD_MEDIADOWNLOAD.toString(), "");
@@ -184,7 +184,7 @@ public class Core implements Core_Intfc {
                         break;
                     }
                     case SERVER_CONFIGMEDIA : {
-                        if(portinfo.security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
+                        if(portinfo._security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
                             backto.put(
                                     Label.FIELD_MESSAGE.toString(), 
                                     _media.Config(new JSONObject(message.getString(Label.FIELD_CONFIGMEDIA.toString()))));

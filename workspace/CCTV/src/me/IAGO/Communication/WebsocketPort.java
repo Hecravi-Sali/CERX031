@@ -40,14 +40,6 @@ public class WebsocketPort {
 	    _uuid = UUID.randomUUID().toString();
 	    _collectionmap.put(_uuid, this);
 		_session = session;
-		
-		JSONObject json = new JSONObject();
-		json.put(Label.FIELD_MESSAGE.toString(), "worinixianren");
-		try {
-            SendMessage(json.toString());
-        } catch (IOException e) {
-            _logger.Error("打开后连接失败");
-        }
 	}
 	
 	@OnMessage
@@ -83,7 +75,7 @@ public class WebsocketPort {
 	                            }
 	                            return re;
 	                        });
-	                _collectionmap.get(_uuid).SendMessage("saonima");
+	                _collectionmap.get(_uuid).SendMessage("Core connect successful");
 	            }
 	            break;
 	        }
@@ -91,7 +83,7 @@ public class WebsocketPort {
 	            if(_corename != null) {
 	                Core_Intfc core = _coremap.get(_corename);
 	                if(core != null) {
-	                    _collectionmap.get(_uuid).SendMessage(core.OnMessage(_uuid, json.getJSONObject(Label.FIELD_COREMESSAGE.toString())).toString());
+	                    _collectionmap.get(_uuid).SendMessage(core.OnMessage(_uuid, new JSONObject(json.getString(Label.FIELD_COREMESSAGE.toString()))).toString());
 	                }
 	            }
 	            break;

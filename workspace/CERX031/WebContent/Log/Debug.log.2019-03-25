@@ -1,0 +1,271 @@
+03-25 10:20:48 [ http-nio-8080-exec-7:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:20:48 [ http-nio-8080-exec-7:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:20:49 [ http-nio-8080-exec-7:79 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:22:38 [ http-nio-8080-exec-4:109916 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553479562143 != file lastModified=1553480552610
+03-25 10:22:38 [ http-nio-8080-exec-4:109916 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:33:51 [ http-nio-8080-exec-2:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:33:51 [ http-nio-8080-exec-2:4 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:33:51 [ http-nio-8080-exec-2:71 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:35:54 [ http-nio-8080-exec-9:123179 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 10:37:24 [ http-nio-8080-exec-6:212573 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 10:37:42 [ http-nio-8080-exec-4:230979 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 10:47:50 [ http-nio-8080-exec-2:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:47:50 [ http-nio-8080-exec-2:4 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:47:50 [ http-nio-8080-exec-2:69 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:48:41 [ http-nio-8080-exec-9:51170 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 10:52:12 [ http-nio-8080-exec-11:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:52:12 [ http-nio-8080-exec-11:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:52:12 [ http-nio-8080-exec-11:65 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:52:51 [ http-nio-8080-exec-8:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:52:51 [ http-nio-8080-exec-8:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:52:51 [ http-nio-8080-exec-8:69 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:53:56 [ http-nio-8080-exec-9:65018 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 10:54:33 [ http-nio-8080-exec-2:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:54:33 [ http-nio-8080-exec-2:4 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:54:33 [ http-nio-8080-exec-2:91 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:54:35 [ http-nio-8080-exec-9:2182 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:55:43 [ http-nio-8080-exec-8:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:55:43 [ http-nio-8080-exec-8:6 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:55:43 [ http-nio-8080-exec-8:85 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 10:57:49 [ http-nio-8080-exec-3:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 10:57:49 [ http-nio-8080-exec-3:6 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 10:57:49 [ http-nio-8080-exec-3:80 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:35:53 [ http-nio-8080-exec-3:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 11:35:53 [ http-nio-8080-exec-3:4 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 11:35:53 [ http-nio-8080-exec-3:68 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:35:57 [ http-nio-8080-exec-7:3821 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:35:58 [ http-nio-8080-exec-4:4492 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:35:59 [ http-nio-8080-exec-1:5391 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 11:35:59 [ http-nio-8080-exec-9:5951 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:00 [ http-nio-8080-exec-6:6438 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:00 [ http-nio-8080-exec-3:6856 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:00 [ http-nio-8080-exec-10:7126 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:01 [ http-nio-8080-exec-5:7340 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:01 [ http-nio-8080-exec-2:7582 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:01 [ http-nio-8080-exec-1:7823 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:01 [ http-nio-8080-exec-9:8036 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:02 [ http-nio-8080-exec-6:8277 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:02 [ http-nio-8080-exec-3:8492 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 11:36:52 [ http-nio-8080-exec-8:58853 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 11:38:01 [ http-nio-8080-exec-8:127487 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 19:03:45 [ http-nio-8080-exec-1:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 19:03:45 [ http-nio-8080-exec-1:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 19:03:45 [ http-nio-8080-exec-1:81 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 19:03:45 [ http-nio-8080-exec-1:96 ]-[ ERROR ]  Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> error  [in template "Main.ftl" at line 50, column 32]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (FTL stack trace):
+----------
+==> ${error.name}  [in template "Main.ftl" at line 50, column 30]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:41)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:24)
+	at freemarker.core.Dot._eval(Dot.java:81)
+	at freemarker.core.Expression.eval(Expression.java:111)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+03-25 19:05:13 [ http-nio-8080-exec-3:88200 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 19:05:13 [ http-nio-8080-exec-3:88201 ]-[ ERROR ]  Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> error  [in template "Main.ftl" at line 50, column 32]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (FTL stack trace):
+----------
+==> ${error.name}  [in template "Main.ftl" at line 50, column 30]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:41)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:24)
+	at freemarker.core.Dot._eval(Dot.java:81)
+	at freemarker.core.Expression.eval(Expression.java:111)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+03-25 19:05:23 [ http-nio-8080-exec-4:98144 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 19:05:23 [ http-nio-8080-exec-4:98145 ]-[ ERROR ]  Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> error  [in template "Main.ftl" at line 50, column 32]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (FTL stack trace):
+----------
+==> ${error.name}  [in template "Main.ftl" at line 50, column 30]
+----------
+
+Java stack trace (for programmers):
+----------
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:41)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:24)
+	at freemarker.core.Dot._eval(Dot.java:81)
+	at freemarker.core.Expression.eval(Expression.java:111)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+03-25 19:49:40 [ http-nio-8080-exec-1:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 19:49:40 [ http-nio-8080-exec-1:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 19:49:40 [ http-nio-8080-exec-1:85 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 19:50:02 [ http-nio-8080-exec-5:21477 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 19:56:29 [ http-nio-8080-exec-9:408514 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 19:57:57 [ http-nio-8080-exec-1:496873 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 19:58:27 [ http-nio-8080-exec-4:526841 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:05:34 [ http-nio-8080-exec-10:953943 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:10:07 [ http-nio-8080-exec-2:1226381 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:10:58 [ http-nio-8080-exec-6:1278049 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:11:15 [ http-nio-8080-exec-9:1294439 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:11:38 [ http-nio-8080-exec-1:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 20:11:38 [ http-nio-8080-exec-1:6 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 20:11:38 [ http-nio-8080-exec-1:87 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 20:12:39 [ http-nio-8080-exec-4:61501 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:13:18 [ http-nio-8080-exec-1:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 20:13:18 [ http-nio-8080-exec-1:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 20:13:18 [ http-nio-8080-exec-1:91 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 20:13:45 [ http-nio-8080-exec-4:27355 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 20:33:16 [ http-nio-8080-exec-4:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-25 20:33:16 [ http-nio-8080-exec-4:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-25 20:33:16 [ http-nio-8080-exec-4:82 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-25 21:02:32 [ http-nio-8080-exec-9:1755759 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 21:02:46 [ http-nio-8080-exec-1:1769786 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 21:02:54 [ http-nio-8080-exec-2:1777590 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 21:03:03 [ http-nio-8080-exec-4:1787080 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-25 21:03:10 [ http-nio-8080-exec-5:1793598 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.

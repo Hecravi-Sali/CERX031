@@ -2,13 +2,15 @@ package me.IAGO.Log;
 
 import java.io.File;
 import java.util.logging.FileHandler;
+import java.util.logging.LogRecord;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 import me.IAGO.Item.Label;
 
 public class Log implements Log_Intfc {
     private static Logger _logger = Logger.getLogger(Log.class.toString());
-    private static FileHandler loggerfile;
+    private static FileHandler _loggerfile;
 
     public Log() {
         File file = new File(Label.CONST_LOGDIR.toString(), Label.CONST_LOGNAME.toString());
@@ -18,8 +20,9 @@ public class Log implements Log_Intfc {
         try {
             file.createNewFile();
             System.out.println(file.getAbsolutePath());
-            loggerfile = new FileHandler(file.getAbsolutePath());
-            _logger.addHandler(loggerfile); 
+            _loggerfile = new FileHandler(file.getAbsolutePath());
+            _loggerfile.setFormatter(new SimpleFormatter());
+            _logger.addHandler(_loggerfile); 
         } catch (Exception e) {
             e.printStackTrace();
         }

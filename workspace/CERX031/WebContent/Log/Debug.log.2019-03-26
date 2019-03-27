@@ -1,0 +1,378 @@
+03-26 13:04:40 [ http-nio-8080-exec-2:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 13:04:40 [ http-nio-8080-exec-2:6 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:04:40 [ http-nio-8080-exec-2:99 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 13:04:45 [ http-nio-8080-exec-4:5294 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:05:34 [ http-nio-8080-exec-8:53968 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:05:35 [ http-nio-8080-exec-9:55106 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 13:05:48 [ http-nio-8080-exec-1:68560 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:05:49 [ http-nio-8080-exec-2:69714 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 13:30:59 [ http-nio-8080-exec-5:1579393 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553516023011 != file lastModified=1553578110845
+03-26 13:30:59 [ http-nio-8080-exec-5:1579393 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:31:58 [ http-nio-8080-exec-9:1638528 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578110845 != file lastModified=1553578316626
+03-26 13:31:58 [ http-nio-8080-exec-9:1638529 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:32:16 [ http-nio-8080-exec-2:1655910 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578316626 != file lastModified=1553578334784
+03-26 13:32:16 [ http-nio-8080-exec-2:1655910 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:35:23 [ http-nio-8080-exec-6:1843090 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578334784 != file lastModified=1553578514518
+03-26 13:35:23 [ http-nio-8080-exec-6:1843090 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:35:37 [ http-nio-8080-exec-9:1857122 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578514518 != file lastModified=1553578525421
+03-26 13:35:37 [ http-nio-8080-exec-9:1857122 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:39:36 [ http-nio-8080-exec-3:2095890 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578525421 != file lastModified=1553578773774
+03-26 13:39:36 [ http-nio-8080-exec-3:2095890 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:40:05 [ http-nio-8080-exec-7:2125533 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578773774 != file lastModified=1553578804424
+03-26 13:40:05 [ http-nio-8080-exec-7:2125533 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:45:23 [ http-nio-8080-exec-1:2443524 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578804424 != file lastModified=1553578900225
+03-26 13:45:23 [ http-nio-8080-exec-1:2443524 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:45:51 [ http-nio-8080-exec-5:2471847 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:46:16 [ http-nio-8080-exec-9:2496392 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553578900225 != file lastModified=1553579174442
+03-26 13:46:16 [ http-nio-8080-exec-9:2496392 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:47:00 [ http-nio-8080-exec-5:2540246 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553579174442 != file lastModified=1553579218030
+03-26 13:47:00 [ http-nio-8080-exec-5:2540246 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:47:29 [ http-nio-8080-exec-4:2568908 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:48:22 [ http-nio-8080-exec-3:2622815 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:49:47 [ http-nio-8080-exec-2:2706915 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553579218030 != file lastModified=1553579385335
+03-26 13:49:47 [ http-nio-8080-exec-2:2706915 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 13:50:56 [ http-nio-8080-exec-1:2776122 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:53:54 [ http-nio-8080-exec-10:2954813 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:56:05 [ http-nio-8080-exec-9:3085527 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 13:57:20 [ http-nio-8080-exec-8:3160663 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 14:03:00 [ http-nio-8080-exec-7:3500670 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 14:03:44 [ http-nio-8080-exec-4:3543994 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 14:03:56 [ http-nio-8080-exec-9:3555892 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 14:04:10 [ http-nio-8080-exec-7:3570453 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 14:04:43 [ http-nio-8080-exec-5:3602927 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:26:07 [ http-nio-8080-exec-6:19287269 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 18:26:07 [ http-nio-8080-exec-6:19287302 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:27:54 [ http-nio-8080-exec-3:19394617 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:28:22 [ http-nio-8080-exec-4:19422260 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:28:28 [ http-nio-8080-exec-1:19428208 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:29:07 [ http-nio-8080-exec-8:19467071 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:38:58 [ http-nio-8080-exec-7:20058501 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553579385335 != file lastModified=1553596711481
+03-26 18:38:58 [ http-nio-8080-exec-7:20058501 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:39:37 [ http-nio-8080-exec-5:20097204 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596711481 != file lastModified=1553596774939
+03-26 18:39:37 [ http-nio-8080-exec-5:20097204 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:40:06 [ http-nio-8080-exec-9:20126839 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:40:10 [ http-nio-8080-exec-4:20130366 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:40:23 [ http-nio-8080-exec-10:20143188 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596774939 != file lastModified=1553596805908
+03-26 18:40:23 [ http-nio-8080-exec-10:20143188 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:40:30 [ http-nio-8080-exec-7:20150157 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596805908 != file lastModified=1553596822440
+03-26 18:40:30 [ http-nio-8080-exec-7:20150157 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:40:30 [ http-nio-8080-exec-6:20150612 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:40:30 [ http-nio-8080-exec-2:20150831 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:40:50 [ http-nio-8080-exec-1:20170358 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596822440 != file lastModified=1553596848495
+03-26 18:40:50 [ http-nio-8080-exec-1:20170358 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:41:03 [ http-nio-8080-exec-7:20183741 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596848495 != file lastModified=1553596861676
+03-26 18:41:03 [ http-nio-8080-exec-7:20183741 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:42:23 [ http-nio-8080-exec-5:20263346 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596861676 != file lastModified=1553596940910
+03-26 18:42:23 [ http-nio-8080-exec-5:20263346 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:44:22 [ http-nio-8080-exec-9:20382358 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:44:26 [ http-nio-8080-exec-4:20386836 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:44:27 [ http-nio-8080-exec-1:20387146 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:44:27 [ http-nio-8080-exec-5:20387368 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:44:27 [ http-nio-8080-exec-3:20387541 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:46:10 [ http-nio-8080-exec-4:20490239 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553596940910 != file lastModified=1553597101369
+03-26 18:46:10 [ http-nio-8080-exec-4:20490239 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:47:29 [ http-nio-8080-exec-2:20568972 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:47:48 [ http-nio-8080-exec-1:20588170 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:48:25 [ http-nio-8080-exec-7:20625644 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:49:28 [ http-nio-8080-exec-8:20687990 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597101369 != file lastModified=1553597358760
+03-26 18:49:28 [ http-nio-8080-exec-8:20687990 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:50:06 [ http-nio-8080-exec-5:20726829 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597358760 != file lastModified=1553597402644
+03-26 18:50:06 [ http-nio-8080-exec-5:20726829 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:50:13 [ http-nio-8080-exec-3:20732978 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:50:14 [ http-nio-8080-exec-2:20734025 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:50:23 [ http-nio-8080-exec-7:20743121 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597402644 != file lastModified=1553597421695
+03-26 18:50:23 [ http-nio-8080-exec-7:20743121 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:50:34 [ http-nio-8080-exec-5:20753983 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597421695 != file lastModified=1553597431164
+03-26 18:50:34 [ http-nio-8080-exec-5:20753983 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:53:35 [ http-nio-8080-exec-9:20935228 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597431164 != file lastModified=1553597611282
+03-26 18:53:35 [ http-nio-8080-exec-9:20935228 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:53:58 [ http-nio-8080-exec-6:20958169 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597611282 != file lastModified=1553597635902
+03-26 18:53:58 [ http-nio-8080-exec-6:20958169 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:54:24 [ http-nio-8080-exec-3:20984188 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597635902 != file lastModified=1553597649485
+03-26 18:54:24 [ http-nio-8080-exec-3:20984188 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:55:13 [ http-nio-8080-exec-4:21033132 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597649485 != file lastModified=1553597710182
+03-26 18:55:13 [ http-nio-8080-exec-4:21033132 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:55:23 [ http-nio-8080-exec-2:21043531 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597710182 != file lastModified=1553597712181
+03-26 18:55:23 [ http-nio-8080-exec-2:21043531 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:55:24 [ http-nio-8080-exec-7:21044308 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:37 [ http-nio-8080-exec-6:21057204 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597712181 != file lastModified=1553597735920
+03-26 18:55:37 [ http-nio-8080-exec-6:21057204 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:55:38 [ http-nio-8080-exec-10:21057996 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:38 [ http-nio-8080-exec-1:21058180 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:42 [ http-nio-8080-exec-5:21061971 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:42 [ http-nio-8080-exec-3:21062220 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597735920 != file lastModified=1553597740716
+03-26 18:55:42 [ http-nio-8080-exec-3:21062220 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:55:42 [ http-nio-8080-exec-2:21062423 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:42 [ http-nio-8080-exec-8:21062622 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:42 [ http-nio-8080-exec-9:21062845 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:55:43 [ http-nio-8080-exec-4:21063042 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:56:17 [ http-nio-8080-exec-2:21097486 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597740716 != file lastModified=1553597775650
+03-26 18:56:17 [ http-nio-8080-exec-2:21097486 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:56:25 [ http-nio-8080-exec-8:21105028 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:56:27 [ http-nio-8080-exec-6:21107637 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:56:32 [ http-nio-8080-exec-10:21111980 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597775650 != file lastModified=1553597784208
+03-26 18:56:32 [ http-nio-8080-exec-10:21111980 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:57:44 [ http-nio-8080-exec-4:21184451 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597784208 != file lastModified=1553597835998
+03-26 18:57:44 [ http-nio-8080-exec-4:21184452 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:57:52 [ http-nio-8080-exec-7:21192537 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597835998 != file lastModified=1553597863282
+03-26 18:57:52 [ http-nio-8080-exec-7:21192538 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:57:53 [ http-nio-8080-exec-6:21193708 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:57:58 [ http-nio-8080-exec-10:21198015 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597863282 != file lastModified=1553597871766
+03-26 18:57:58 [ http-nio-8080-exec-10:21198015 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 18:58:50 [ http-nio-8080-exec-3:21250839 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 18:58:51 [ http-nio-8080-exec-2:21251732 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:58:52 [ http-nio-8080-exec-5:21252445 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:58:54 [ http-nio-8080-exec-6:21254678 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:58:55 [ http-nio-8080-exec-1:21255368 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 18:58:56 [ http-nio-8080-exec-8:21255974 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597871766 != file lastModified=1553597929403
+03-26 18:58:56 [ http-nio-8080-exec-8:21255975 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:02:24 [ http-nio-8080-exec-5:21463924 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:02:25 [ http-nio-8080-exec-6:21465519 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:02:25 [ http-nio-8080-exec-1:21465791 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:02:26 [ http-nio-8080-exec-8:21466080 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:02:26 [ http-nio-8080-exec-10:21466455 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:02:26 [ http-nio-8080-exec-3:21466727 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:07 [ http-nio-8080-exec-1:21567097 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553597929403 != file lastModified=1553598210621
+03-26 19:04:07 [ http-nio-8080-exec-1:21567098 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:04:08 [ http-nio-8080-exec-8:21568395 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:09 [ http-nio-8080-exec-10:21568986 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:09 [ http-nio-8080-exec-3:21569647 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:11 [ http-nio-8080-exec-7:21571517 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:12 [ http-nio-8080-exec-9:21572733 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:04:14 [ http-nio-8080-exec-4:21573879 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:15 [ http-nio-8080-exec-2:21575618 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:16 [ http-nio-8080-exec-5:21576538 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:17 [ http-nio-8080-exec-6:21577361 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:04:18 [ http-nio-8080-exec-1:21578267 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:04:28 [ http-nio-8080-exec-2:21588448 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:05:02 [ http-nio-8080-exec-7:21622017 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:05:03 [ http-nio-8080-exec-9:21623187 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:03 [ http-nio-8080-exec-4:21623744 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:04 [ http-nio-8080-exec-3:21624183 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:05 [ http-nio-8080-exec-5:21625495 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:06 [ http-nio-8080-exec-10:21625993 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:06 [ http-nio-8080-exec-2:21626269 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:06 [ http-nio-8080-exec-8:21626543 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:07 [ http-nio-8080-exec-6:21626927 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:12 [ http-nio-8080-exec-4:21632488 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598210621 != file lastModified=1553598311241
+03-26 19:05:12 [ http-nio-8080-exec-4:21632489 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:05:13 [ http-nio-8080-exec-3:21633417 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:14 [ http-nio-8080-exec-9:21633967 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:14 [ http-nio-8080-exec-10:21634287 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:14 [ http-nio-8080-exec-2:21634634 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:15 [ http-nio-8080-exec-8:21634871 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:15 [ http-nio-8080-exec-6:21635158 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:15 [ http-nio-8080-exec-1:21635446 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:15 [ http-nio-8080-exec-7:21635701 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:16 [ http-nio-8080-exec-5:21635990 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:16 [ http-nio-8080-exec-4:21636215 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:16 [ http-nio-8080-exec-2:21636515 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:16 [ http-nio-8080-exec-9:21636725 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:17 [ http-nio-8080-exec-6:21636943 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:17 [ http-nio-8080-exec-1:21637200 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:17 [ http-nio-8080-exec-7:21637446 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:05:17 [ http-nio-8080-exec-5:21637680 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:05:26 [ http-nio-8080-exec-4:21646137 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598311241 != file lastModified=1553598324679
+03-26 19:05:26 [ http-nio-8080-exec-4:21646137 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:05:45 [ http-nio-8080-exec-1:21665829 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598324679 != file lastModified=1553598337644
+03-26 19:05:45 [ http-nio-8080-exec-1:21665830 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:05:47 [ http-nio-8080-exec-7:21666958 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:06:01 [ http-nio-8080-exec-10:21681657 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598337644 != file lastModified=1553598344230
+03-26 19:06:01 [ http-nio-8080-exec-10:21681657 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:06:02 [ http-nio-8080-exec-3:21682229 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:07:48 [ http-nio-8080-exec-4:21788592 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598344230 != file lastModified=1553598416518
+03-26 19:07:48 [ http-nio-8080-exec-4:21788592 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:07:49 [ http-nio-8080-exec-2:21789717 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:29 [ http-nio-8080-exec-9:22069453 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598416518 != file lastModified=1553598541318
+03-26 19:12:29 [ http-nio-8080-exec-9:22069453 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:12:30 [ http-nio-8080-exec-5:22070468 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:31 [ http-nio-8080-exec-4:22071304 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:48 [ http-nio-8080-exec-2:22088020 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:12:51 [ http-nio-8080-exec-7:22091353 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:52 [ http-nio-8080-exec-6:22092720 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:53 [ http-nio-8080-exec-1:22093760 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:12:54 [ http-nio-8080-exec-9:22094662 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:55 [ http-nio-8080-exec-10:22095506 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:12:56 [ http-nio-8080-exec-4:22096315 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:25 [ http-nio-8080-exec-1:22125854 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:13:28 [ http-nio-8080-exec-9:22128544 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:29 [ http-nio-8080-exec-10:22129584 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:32 [ http-nio-8080-exec-4:22132514 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:13:34 [ http-nio-8080-exec-2:22134752 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:37 [ http-nio-8080-exec-5:22137177 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:41 [ http-nio-8080-exec-6:22141237 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:13:42 [ http-nio-8080-exec-8:22142166 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:43 [ http-nio-8080-exec-2:22143179 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:13:44 [ http-nio-8080-exec-10:22144343 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:14:00 [ http-nio-8080-exec-3:22160247 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:14:04 [ http-nio-8080-exec-1:22164414 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:14:53 [ http-nio-8080-exec-9:22213450 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:16:35 [ http-nio-8080-exec-2:22315271 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:16:37 [ http-nio-8080-exec-6:22317417 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:16:39 [ http-nio-8080-exec-4:22319278 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:16:40 [ http-nio-8080-exec-9:22320412 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598541318 != file lastModified=1553598994288
+03-26 19:16:40 [ http-nio-8080-exec-9:22320413 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:16:41 [ http-nio-8080-exec-7:22321775 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:17:28 [ http-nio-8080-exec-6:22368596 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553598994288 != file lastModified=1553599047313
+03-26 19:17:28 [ http-nio-8080-exec-6:22368596 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:17:34 [ http-nio-8080-exec-4:22374541 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:17:44 [ http-nio-8080-exec-1:22384575 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599047313 != file lastModified=1553599062852
+03-26 19:17:44 [ http-nio-8080-exec-1:22384575 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:18:38 [ http-nio-8080-exec-9:22438280 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599062852 != file lastModified=1553599105879
+03-26 19:18:38 [ http-nio-8080-exec-9:22438280 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:19:06 [ http-nio-8080-exec-2:22466024 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:19:42 [ http-nio-8080-exec-5:22502118 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599105879 != file lastModified=1553599179439
+03-26 19:19:42 [ http-nio-8080-exec-5:22502118 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:20:08 [ http-nio-8080-exec-7:22528012 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599179439 != file lastModified=1553599206337
+03-26 19:20:08 [ http-nio-8080-exec-7:22528012 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:20:08 [ http-nio-8080-exec-3:22528766 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:09 [ http-nio-8080-exec-1:22529393 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:37 [ http-nio-8080-exec-2:22557167 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599206337 != file lastModified=1553599214262
+03-26 19:20:37 [ http-nio-8080-exec-2:22557167 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:20:38 [ http-nio-8080-exec-7:22557934 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:38 [ http-nio-8080-exec-3:22558172 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:38 [ http-nio-8080-exec-1:22558373 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:43 [ http-nio-8080-exec-5:22562989 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599214262 != file lastModified=1553599236343
+03-26 19:20:43 [ http-nio-8080-exec-5:22562989 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:20:43 [ http-nio-8080-exec-10:22563214 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:43 [ http-nio-8080-exec-8:22563393 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:43 [ http-nio-8080-exec-9:22563589 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:20:59 [ http-nio-8080-exec-7:22579428 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599236343 != file lastModified=1553599256690
+03-26 19:20:59 [ http-nio-8080-exec-7:22579428 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:21:00 [ http-nio-8080-exec-3:22580057 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:00 [ http-nio-8080-exec-1:22580395 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:00 [ http-nio-8080-exec-5:22580728 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:23 [ http-nio-8080-exec-7:22603298 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599256690 != file lastModified=1553599281350
+03-26 19:21:23 [ http-nio-8080-exec-7:22603298 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:21:25 [ http-nio-8080-exec-3:22605622 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:26 [ http-nio-8080-exec-1:22606120 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:26 [ http-nio-8080-exec-5:22606397 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:26 [ http-nio-8080-exec-6:22606601 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:26 [ http-nio-8080-exec-4:22606836 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:29 [ http-nio-8080-exec-9:22609634 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:21:30 [ http-nio-8080-exec-10:22609969 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:30 [ http-nio-8080-exec-4:22610216 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:30 [ http-nio-8080-exec-9:22610408 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:30 [ http-nio-8080-exec-6:22610539 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:30 [ http-nio-8080-exec-9:22610612 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:30 [ http-nio-8080-exec-5:22610826 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:31 [ http-nio-8080-exec-3:22611049 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:31 [ http-nio-8080-exec-2:22611249 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:31 [ http-nio-8080-exec-7:22611858 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:21:33 [ http-nio-8080-exec-10:22613423 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:22:14 [ http-nio-8080-exec-3:22654557 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599281350 != file lastModified=1553599331261
+03-26 19:22:14 [ http-nio-8080-exec-3:22654558 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:23:16 [ http-nio-8080-exec-8:22716486 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599331261 != file lastModified=1553599390513
+03-26 19:23:16 [ http-nio-8080-exec-8:22716486 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:23:17 [ http-nio-8080-exec-1:22717149 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:17 [ http-nio-8080-exec-6:22717586 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:18 [ http-nio-8080-exec-3:22717945 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:18 [ http-nio-8080-exec-4:22718310 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:20 [ http-nio-8080-exec-9:22720524 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:20 [ http-nio-8080-exec-10:22720838 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:21 [ http-nio-8080-exec-8:22721108 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:21 [ http-nio-8080-exec-1:22721366 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:21 [ http-nio-8080-exec-6:22721630 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599390513 != file lastModified=1553599395500
+03-26 19:23:21 [ http-nio-8080-exec-6:22721630 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:23:23 [ http-nio-8080-exec-2:22723475 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:45 [ http-nio-8080-exec-8:22744960 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:23:45 [ http-nio-8080-exec-1:22745815 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:46 [ http-nio-8080-exec-6:22746140 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:46 [ http-nio-8080-exec-2:22746317 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:46 [ http-nio-8080-exec-4:22746521 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:46 [ http-nio-8080-exec-5:22746795 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:47 [ http-nio-8080-exec-10:22747025 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:47 [ http-nio-8080-exec-7:22747253 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:23:47 [ http-nio-8080-exec-1:22747479 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:24:03 [ http-nio-8080-exec-3:22763376 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599395500 != file lastModified=1553599424072
+03-26 19:24:03 [ http-nio-8080-exec-3:22763376 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:25:05 [ http-nio-8080-exec-6:22825605 ]-[ DEBUG ]  Updating source, info for cause: lastModifiedNotChanged=false, cache lastModified=1553599424072 != file lastModified=1553599449994
+03-26 19:25:05 [ http-nio-8080-exec-6:22825605 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 19:28:24 [ http-nio-8080-exec-10:23024686 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 19:28:25 [ http-nio-8080-exec-7:23025349 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:28:25 [ http-nio-8080-exec-1:23025590 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:28:25 [ http-nio-8080-exec-6:23025845 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 19:33:38 [ http-nio-8080-exec-10:23338230 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:08:31 [ http-nio-8080-exec-11:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 20:08:31 [ http-nio-8080-exec-11:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 20:08:32 [ http-nio-8080-exec-11:75 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:09:24 [ http-nio-8080-exec-16:52514 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:09:25 [ http-nio-8080-exec-11:53384 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:09:27 [ http-nio-8080-exec-18:55082 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:09:34 [ http-nio-8080-exec-16:62552 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:09:55 [ http-nio-8080-exec-14:83461 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:09:56 [ http-nio-8080-exec-16:84380 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:10:30 [ http-nio-8080-exec-12:118500 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:10:39 [ http-nio-8080-exec-17:128009 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:11:38 [ http-nio-8080-exec-16:187025 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:11:44 [ http-nio-8080-exec-20:192484 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:13:14 [ http-nio-8080-exec-12:282629 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:13:20 [ http-nio-8080-exec-20:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 20:13:20 [ http-nio-8080-exec-20:3 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 20:13:21 [ http-nio-8080-exec-20:75 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:13:21 [ http-nio-8080-exec-13:373 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:15:54 [ http-nio-8080-exec-22:153858 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:15:56 [ http-nio-8080-exec-19:155108 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:15:58 [ http-nio-8080-exec-17:157863 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:00 [ http-nio-8080-exec-23:159305 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:16:00 [ http-nio-8080-exec-13:159608 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:00 [ http-nio-8080-exec-28:159800 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:01 [ http-nio-8080-exec-24:160090 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:01 [ http-nio-8080-exec-21:160638 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:09 [ http-nio-8080-exec-19:168745 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:16:10 [ http-nio-8080-exec-27:169375 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:11 [ http-nio-8080-exec-23:170092 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:16 [ http-nio-8080-exec-29:175713 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:16:17 [ http-nio-8080-exec-28:176717 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:16:39 [ http-nio-8080-exec-27:198278 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:16:40 [ http-nio-8080-exec-23:199527 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:17:29 [ http-nio-8080-exec-22:248867 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:19:57 [ http-nio-8080-exec-21:396463 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:20:05 [ http-nio-8080-exec-22:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 20:20:05 [ http-nio-8080-exec-22:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 20:20:05 [ http-nio-8080-exec-22:81 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:20:11 [ http-nio-8080-exec-26:6662 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:20:21 [ http-nio-8080-exec-21:16079 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:21:40 [ http-nio-8080-exec-32:95170 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:21:41 [ http-nio-8080-exec-29:96445 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:42 [ http-nio-8080-exec-36:97213 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:43 [ http-nio-8080-exec-33:97884 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:52 [ http-nio-8080-exec-32:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 20:21:52 [ http-nio-8080-exec-32:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 20:21:52 [ http-nio-8080-exec-32:75 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:52 [ http-nio-8080-exec-36:75 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:53 [ http-nio-8080-exec-38:300 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:53 [ http-nio-8080-exec-31:375 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:21:53 [ http-nio-8080-exec-39:474 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:22:55 [ http-nio-8080-exec-41:62600 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:23:12 [ http-nio-8080-exec-35:79143 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:23:12 [ http-nio-8080-exec-33:79938 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:23:14 [ http-nio-8080-exec-43:81535 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:23:15 [ http-nio-8080-exec-40:82169 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:23:25 [ http-nio-8080-exec-44:93020 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:23:30 [ http-nio-8080-exec-37:97533 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:51:08 [ http-nio-8080-exec-46:1755625 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:51:09 [ http-nio-8080-exec-41:1757045 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:51:10 [ http-nio-8080-exec-44:1757742 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:51:11 [ http-nio-8080-exec-47:1758287 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:51:11 [ http-nio-8080-exec-42:1758798 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:51:12 [ http-nio-8080-exec-48:1759288 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 20:52:01 [ http-nio-8080-exec-44:1808721 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:52:38 [ http-nio-8080-exec-49:1845890 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:57:09 [ http-nio-8080-exec-45:2116753 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:57:31 [ http-nio-8080-exec-47:2138801 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:58:40 [ http-nio-8080-exec-46:2207132 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 20:58:41 [ http-nio-8080-exec-42:2208593 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 21:39:58 [ http-nio-8080-exec-48:4685680 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 23:08:58 [ http-nio-8080-exec-46:10025946 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 23:11:08 [ http-nio-8080-exec-2:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 23:11:08 [ http-nio-8080-exec-2:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 23:11:08 [ http-nio-8080-exec-2:94 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 23:14:10 [ http-nio-8080-exec-3:0 ]-[ DEBUG ]  Could not find template in cache, creating new one; id=["Main.ftl"["zh_CN",UTF-8,parsed] ]
+03-26 23:14:10 [ http-nio-8080-exec-3:5 ]-[ DEBUG ]  Compiling FreeMarker template "Main.ftl"["zh_CN",UTF-8,parsed]  from "F:\\Project\\CERX031\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\CCTV\\WEB-INF\\ftl\\Main.ftl"
+03-26 23:14:10 [ http-nio-8080-exec-3:80 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 23:17:24 [ http-nio-8080-exec-10:194005 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.
+03-26 23:17:26 [ http-nio-8080-exec-8:196079 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 23:17:27 [ http-nio-8080-exec-4:197580 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 23:17:28 [ http-nio-8080-exec-2:198681 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  cached copy not yet stale; using cached.
+03-26 23:18:03 [ http-nio-8080-exec-10:233067 ]-[ DEBUG ]  "Main.ftl"["zh_CN",UTF-8,parsed]  using cached since F:\Project\CERX031\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CCTV\WEB-INF\ftl\Main.ftl didn't change.

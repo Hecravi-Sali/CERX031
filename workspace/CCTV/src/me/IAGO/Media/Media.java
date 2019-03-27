@@ -44,7 +44,7 @@ public class Media implements Media_Intfc {
 	private Map<String, MediaDataWatcher> _list = new HashMap<String, MediaDataWatcher>();
     private ScheduledExecutorService _timer = Executors.newScheduledThreadPool(1);
     private ScheduledFuture<?> runingthread = null;
-	private ConnectBase64 _connectbase64 = null;
+	private ConnectBase64 _connectmediadata = null;
 	private FileSystem_Intfc _filesystem;
 	private String _username;
 	
@@ -54,8 +54,8 @@ public class Media implements Media_Intfc {
 	    StartMediaForward(
 	            "MainSavein", 
 	            (String data) -> {
-	                if(_connectbase64 != null) {
-	                    _connectbase64.Savein(data);
+	                if(_connectmediadata != null) {
+	                    _connectmediadata.Savein(data);
 	                    return true;
 	                }
 	                return false;
@@ -74,23 +74,22 @@ public class Media implements Media_Intfc {
             if(runingthread == null) {
                 int timelimit = conf.getInt(Label.FIELD_MEDIATIMELIMIT.toString());
                 timelimit = timelimit > 1 ? timelimit : 2;
-                _connectbase64 = new ConnectBase64();
+                _connectmediadata = new ConnectBase64();
                 runingthread = _timer.scheduleAtFixedRate(
                         () -> {
                             Date enddate = new Date();
-                            String data = _connectbase64.Removeout();
+                            String data = _connectmediadata.Removeout();
                             if(data.length() > 0) {
                                 _filesystem.SaveUserFile(
                                         _username,
                                         data, 
-                                        new StoreDate(_connectbase64.startdate, enddate));
+                                        new StoreDate(_connectmediadata.startdate, enddate));
                             }
-                            _connectbase64.startdate = enddate; 
+                            _connectmediadata.startdate = enddate; 
                         },
                         timelimit, timelimit, TimeUnit.SECONDS);
             }
             else {
-                //  TODO log
                 re = false;
             }
         }
@@ -99,14 +98,14 @@ public class Media implements Media_Intfc {
                 runingthread.cancel(false);
             }
             runingthread = null;
-            String remainmediadata = _connectbase64.Removeout();
+            String remainmediadata = _connectmediadata.Removeout();
             if(remainmediadata.toString().isEmpty() == false) {
                 _filesystem.SaveUserFile(
                         _username,
                         remainmediadata, 
-                        new StoreDate(_connectbase64.startdate, new Date()));
+                        new StoreDate(_connectmediadata.startdate, new Date()));
             }
-            _connectbase64 = null;
+            _connectmediadata = null;
         }
         return re;
     }
@@ -114,13 +113,17 @@ public class Media implements Media_Intfc {
 	@Override
 	public JSONObject GetMediaRecordDate()
 	        throws JSONException {
-		JSONObject json = new JSONObject();
+		JSONObject re = new JSONObject();
 		List<StoreDate_Intfc> index = _filesystem.GetUserFileIndex(_username);
-        json.put(Label.FIELD_MEDIAINDEXNUM.toString(), index.size());
+		index.sort(
+                (StoreDate_Intfc date1, StoreDate_Intfc date2) -> {
+                    return date1.GetBeginDate().compareTo(date2.GetBeginDate());
+                    });
+        re.put(Label.FIELD_MEDIAINDEXNUM.toString(), index.size());
         for(int key = 0; key < index.size(); key++) {
-            json.put(String.valueOf(key), index.get(key).toString());
+            re.put(String.valueOf(key), index.get(key).toString());
         }
-		return json;
+		return re;
 	}
 
 	@Override
@@ -138,20 +141,20 @@ public class Media implements Media_Intfc {
 	public String PullMediaData(JSONObject date)
 	        throws ParseException, JSONException {
 	    ConnectBase64 re = new ConnectBase64();
-	    List<StoreDate> datesort = new ArrayList<>();
+	    List<StoreDate_Intfc> datesort = new ArrayList<>();
         for(int key = 0; key < date.getInt(Label.FIELD_MEDIAINDEXNUM.toString()); key++) {
             datesort.add(new StoreDate(new JSONObject(date.getString(String.valueOf(key)))));
         }
         datesort.sort(
-                (StoreDate date1, StoreDate date2) -> {
+                (StoreDate_Intfc date1, StoreDate_Intfc date2) -> {
                     return date1.GetBeginDate().compareTo(date2.GetBeginDate());
                 });
         datesort.forEach(
-                (oneoffile) -> {
+                (onepiceofdata) -> {
                     re.Savein(
                             _filesystem.GetUserFile(
                                     _username,
-                                    oneoffile));
+                                    onepiceofdata));
                 });
         return re.Removeout();
 	}
