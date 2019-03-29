@@ -115,7 +115,7 @@ public class UnitTest {
         json.put(Label.SERVER.toString(), Label.SERVER_LOGONCONFIRM.toString());
         JSONObject userinfo = new JSONObject();
         userinfo.put(Label.FIELD_USERNAME.toString(), username);
-        userinfo.put(Label.FIELD_USERPASSWORD.toString(), password); 
+        userinfo.put(Label.FIELD_USERPASSWORD.toString(), password);
         json.put(Label.FIELD_MESSAGE.toString(), userinfo.toString());
 
         System.out.println(core.OnMessage(uuid, json));;

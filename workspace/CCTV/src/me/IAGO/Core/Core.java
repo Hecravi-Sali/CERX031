@@ -132,7 +132,9 @@ public class Core implements Core_Intfc {
                     }
                     case SERVER_PUSHMEDIA: {
                         if(portinfo._security.Privilege(_media.OwnerName()) == PrivilegeLevel.Owner) {
-                            _media.PushMediaData(message.getString(Label.FIELD_MEDIADATA.toString()));
+                            String mediadata = message.getString(Label.FIELD_MEDIADATA.toString());
+                            _logger.Info(String.valueOf(mediadata.length()));
+                            _media.PushMediaData(mediadata);
                             backto.put(Label.FIELD_MESSAGE.toString(), true);
                         }
                         else {
@@ -196,6 +198,7 @@ public class Core implements Core_Intfc {
                     }
 
                     default:
+                        backto.put(Label.FIELD_MESSAGE.toString(), "Unable to process service request");
                         _logger.Error("Unable to process service request");
                         break;
                     }

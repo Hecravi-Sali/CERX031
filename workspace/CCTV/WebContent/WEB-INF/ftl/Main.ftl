@@ -32,26 +32,15 @@
                 </div>
             </div>
             
-            <div>
-                <input type = "text" id = "corename" style = "display : none"/>
-                <label id = "corenamelabel" style = "display : none"> corename </label>
-            </div>
             
-            <input type = "button" id = "logon" value = "LOGON"/>
-            <input type = "button" id = "login" value = "LOGIN"/>
-            <input type = "button" id = "changesumit" value = "CHANGE" style = "display : none"/>
-            
+            <input type = "button" id = "Test Push Media" value = "LOGON" onclick = "StartMedia()"/>
+            <input type = "button" id = "Test Pull Media" value = "LOGIN" onclick = "ReadMedia()"/>            
             
             <br>
-            <video controls autoplay>
+            <video controls autoplay width="640" height="480" autoplay>
             </video>
             <br>
-            
-            <button id="rec" onclick="onBtnRecordClicked()">
-                Record
-            </button>
         </div>
-        <a id="downloadLink" download="mediarecorder.webm" name="mediarecorder.webm" href></a>
         <p id="data"></p>
         <script src="Javascript/Main.js"></script>
     </body>
